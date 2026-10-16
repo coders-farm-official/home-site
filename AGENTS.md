@@ -30,7 +30,7 @@ It's built on a ThemeForest template (jQuery, Bootstrap, the template's `js/main
 
 ## On each Domovoi release
 
-Update `domovoi/index.html`: the version and date, both APK file names and links, their sizes, and their SHA-256 values from the release's `SHA256SUMS`, plus `softwareVersion` and `downloadUrl` in its JSON-LD. Update the quick facts on `about/index.html` if they name the version.
+Update `domovoi/index.html`: the version and date, both APK file names and links, `DomovoiSetup.exe`'s link, and the sizes and SHA-256 values of all three from the release's `SHA256SUMS`, plus `softwareVersion` and `downloadUrl` in its JSON-LD. Update the quick facts on `about/index.html` if they name the version.
 
 ## Preview
 
@@ -39,3 +39,5 @@ python -m http.server 9922
 ```
 
 Run it from this folder, then open http://localhost:9922. Port 8090 is reserved for something else on the owner's machine.
+
+Python's server answers a missing path with its own plain error page; Render serves `404.html` instead. So a missing path looks different locally than on the live site; open /404.html to check the page itself.

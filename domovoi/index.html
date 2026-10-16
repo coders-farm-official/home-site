@@ -152,6 +152,7 @@
                             <!-- becomes the Google Play badge once the listing is live -->
                             <span class="domovoi-play-soon mb-15px"><i class="fa-brands fa-google-play"></i> Coming to Google Play</span>
                         </div>
+                        <p class="mt-10px mb-0">Want it in every room? <a href="#whole-house" class="smooth-link fw-600 text-decoration-line-bottom">Set up Domovoi for the whole house</a>.</p>
                     </div>
                     <div class="col-xl-5 offset-xl-1 col-lg-6 text-center">
                         <div class="domovoi-visual atropos" data-atropos>
@@ -274,7 +275,52 @@
             </div>
         </section>
         <!-- end section: does / doesn't -->
-        <!-- start section: privacy, next, open -->
+        <!-- start section: whole house -->
+        <!-- On each new release: update DomovoiSetup.exe's size and SHA-256 below from the release's SHA256SUMS. -->
+        <section id="whole-house" class="domovoi-download">
+            <div class="container">
+                <div class="row justify-content-center mb-50px sm-mb-30px">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px mb-15px">For the whole house</h2>
+                        <p class="fs-18 mb-0">Put a Domovoi server on a computer at home, and the app, the dashboard and a voice in every room all run from it. Your voice never leaves your network.</p>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="download-card">
+                            <h3 class="alt-font text-dark-gray fw-600">Your PC as the house's server</h3>
+                            <p class="mb-0">The Windows installer sets up the whole Domovoi server on a Windows 11 PC: speech, the language models, voices, your music library and the dashboard.</p>
+                            <div class="download-meta">
+                                DomovoiSetup.exe &middot; 3.5 MB
+                                <span class="sha256" title="SHA-256">SHA-256: 5f107a99ea284b9928fa2f40adab261c39f2eb30ab1e0c680bf5dd19a88ac0e4</span>
+                            </div>
+                            <ul class="requirements">
+                                <li>Windows 11 22H2 or later (64-bit), with virtualization turned on in the firmware.</li>
+                                <li>16 GB of memory and 40 GB free, ideally on an SSD. An NVIDIA GPU helps but isn't needed.</li>
+                                <li>About 10.5 to 13.5 GB to download during setup, most of it the AI models.</li>
+                                <li>The installer isn't code-signed yet. Turn Smart App Control off, and when Windows says &ldquo;Windows protected your PC&rdquo;, choose More info, then Run anyway.</li>
+                            </ul>
+                            <a href="https://github.com/coders-farm-official/domovoi/releases/download/v1.0.0-rc1/DomovoiSetup.exe" class="btn btn-medium btn-rounded btn-domovoi fw-600 mb-15px"><i class="feather icon-feather-download me-5px"></i> Download for Windows</a>
+                            <p class="mb-0 fs-15"><a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/WINDOWS_HOST.md" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">The full Windows guide</a>. On Linux, one script installs it all on Ubuntu 26.04: <a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/LINUX_HOST.md" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">the Linux guide</a>.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="download-card secondary">
+                            <h3 class="alt-font text-dark-gray fw-600">A voice in every room</h3>
+                            <p>Any room can have Domovoi: a Raspberry Pi speaker, a spare Linux or Windows laptop, or an old phone or tablet running this app in room mode.</p>
+                            <p>Add one from your server's dashboard under Settings, Satellites. It joins with a one-time approval code, and then it hears the wake word, answers, plays music, rings timers and works as an intercom.</p>
+                            <ul class="requirements">
+                                <li>Keep laptops and phones on a charger, on a hard surface, with a charge limit if they have one.</li>
+                                <li>A phone or tablet becomes a room through this app, with nothing else to install.</li>
+                            </ul>
+                            <a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/SPARE_DEVICE_SATELLITES.md" target="_blank" class="btn btn-medium btn-rounded btn-outline-domovoi fw-600"><i class="feather icon-feather-book-open me-5px"></i> Set up a room</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section: whole house -->
+        <!-- start section: privacy, open, updates -->
         <section>
             <div class="container">
                 <div class="row g-5">
@@ -286,21 +332,21 @@
                         <a href="/privacy/#domovoi-app" class="text-dark-gray fw-600 text-decoration-line-bottom">Read the app's privacy policy</a>
                     </div>
                     <div class="col-lg-4">
-                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px fs-30 mb-20px">Coming next</h2>
-                        <p><strong class="text-dark-gray">Your PC as the house's server.</strong> A Windows installer that turns the computer you already have into a Domovoi server.</p>
-                        <p><strong class="text-dark-gray">Rooms from spare devices.</strong> The old phone, tablet or laptop in a drawer becomes a room speaker.</p>
-                        <a href="https://forms.gle/wbz194RhuLmJdg3D8" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">Tell me when it's ready</a>
-                    </div>
-                    <div class="col-lg-4">
                         <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px fs-30 mb-20px">Built in the open</h2>
                         <p>MIT licensed, with 1,100+ commits and more than 9,000 automated tests since July 2026. Built with AI coding agents, held to tests, a written security model and real releases.</p>
                         <p>Want to build things like this? <a href="https://learn.codersfarm.org" class="text-dark-gray fw-600 text-decoration-line-bottom">Start free at learn.codersfarm.org.</a></p>
                         <a href="https://github.com/coders-farm-official/domovoi" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">See the code on GitHub</a>
                     </div>
+                    <div class="col-lg-4">
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px fs-30 mb-20px">Stay in the loop</h2>
+                        <p>Get an email when Domovoi reaches Google Play and when a new release is out. Nothing else, and you can leave any time.</p>
+                        <p><a href="https://forms.gle/wbz194RhuLmJdg3D8" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">Get updates by email</a></p>
+                        <a href="https://discord.gg/j3H5XamSxg" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">Talk with us on Discord</a>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- end section: privacy, next, open -->
+        <!-- end section: privacy, open, updates -->
         <!-- start section: questions -->
         <section class="bg-very-light-gray">
             <div class="container">
@@ -340,7 +386,7 @@
                                 </div>
                                 <div id="domovoi-faq-03" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
                                     <div class="accordion-body last-paragraph-no-margin">
-                                        <p>No. The assistant and your phone's own music, videos and photos work without one. A server adds music in every room, timers, the intercom and more. Setting one up is covered <a href="https://github.com/coders-farm-official/domovoi" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">on GitHub</a>.</p>
+                                        <p>No. The assistant and your phone's own music, videos and photos work without one. A server adds music in every room, timers, the intercom and more. <a href="#whole-house" class="smooth-link text-dark-gray fw-600 text-decoration-line-bottom">Set one up on a Windows PC or Linux</a>.</p>
                                     </div>
                                 </div>
                             </div>
