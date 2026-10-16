@@ -1,0 +1,490 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Domovoi: a voice assistant that runs on your phone - Coders Farm</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="Coders Farm">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="description" content="Domovoi is a free, open-source voice assistant from Coders Farm. On your phone it answers in airplane mode; at home it runs on your own hardware. Download the Android app.">
+        <link rel="canonical" href="https://codersfarm.org/domovoi/">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Coders Farm">
+        <meta property="og:url" content="https://codersfarm.org/domovoi/">
+        <meta property="og:title" content="Domovoi: a voice assistant that runs on your phone">
+        <meta property="og:description" content="Free and open source. After a one-time download it answers in airplane mode, and what you ask never leaves your phone.">
+        <meta property="og:image" content="https://codersfarm.org/images/og-domovoi.jpg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="Domovoi's amber cat: the open-source voice assistant. Your voice stays home.">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@coders_farm">
+        <!-- favicon icon -->
+        <link rel="shortcut icon" href="/images/cropped-codersfarm.png">
+        <link rel="apple-touch-icon" href="/images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+        <!-- google fonts preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- style sheets and font icons -->
+        <link rel="stylesheet" href="/css/vendors.min.css"/>
+        <link rel="stylesheet" href="/css/icon.min.css"/>
+        <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/responsive.css"/>
+        <link rel="stylesheet" href="/css/elearning.css" />
+        <link rel="stylesheet" href="/css/site.css" />
+        <script src="/js/site.js"></script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "MobileApplication",
+            "name": "Domovoi",
+            "url": "https://codersfarm.org/domovoi/",
+            "description": "A free, open-source voice assistant. On the phone it answers with a language model running on the device, in airplane mode after a one-time download.",
+            "operatingSystem": "Android 8.0 or later",
+            "applicationCategory": "UtilitiesApplication",
+            "softwareVersion": "1.0.0-rc1",
+            "downloadUrl": "https://github.com/coders-farm-official/domovoi/releases/tag/v1.0.0-rc1",
+            "license": "https://opensource.org/licenses/MIT",
+            "image": "https://codersfarm.org/images/press/domovoi-icon.png",
+            "screenshot": "https://codersfarm.org/images/domovoi-assistant.webp",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "publisher": { "@type": "Organization", "name": "Coders Farm, Inc.", "url": "https://codersfarm.org/" }
+        }
+        </script>
+    </head>
+    <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-style="modern" data-mobile-nav-bg-color="#313e3b">
+        <!-- start header -->
+        <header>
+            <!-- start navigation -->
+            <nav class="navbar navbar-expand-lg header-light bg-white header-reverse" data-header-hover="light">
+                <div class="container-fluid">
+                    <div class="col-auto col-lg-2 me-lg-0 me-auto">
+                        <a class="navbar-brand" href="/">
+                            <img src="/images/cf-wide-logo.png" alt="Coders Farm" class="default-logo">
+                            <img src="/images/cf-wide-logo.png" alt="Coders Farm" class="alt-logo">
+                            <img src="/images/cf-wide-logo.png" alt="Coders Farm" class="mobile-logo">
+                        </a>
+                    </div>
+                    <div class="col-auto menu-order position-static">
+                        <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav alt-font">
+                                <li class="nav-item"><a href="https://learn.codersfarm.org" class="nav-link">Learn</a></li>
+                                <li class="nav-item"><a href="/domovoi/" class="nav-link">Domovoi</a></li>
+                                <li class="nav-item"><a href="/about/" class="nav-link">About</a></li>
+                                <li class="nav-item"><a href="https://donate.codersfarm.org" class="nav-link">Donate</a></li>
+                                <li class="nav-item">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </li>
+                                <li class="nav-item">
+                                    <a class="twitter" href="https://x.com/coders_farm" target="_blank" aria-label="Coders Farm on X">
+                                        <i class="fa-brands fa-x-twitter fa-2xl"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </li>
+                                <li class="nav-item">
+                                    <a class="linkedin" href="https://www.linkedin.com/company/7802043/" target="_blank" aria-label="Coders Farm on LinkedIn">
+                                        <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </li>
+                                <li class="nav-item">
+                                    <a class="facebook" href="https://www.facebook.com/codersfarm" target="_blank" aria-label="Coders Farm on Facebook">
+                                        <i class="fa-brands fa-facebook-f fa-2xl"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
+                        <div class="header-icon" style="margin-bottom: 5px;">
+                            <a href="https://learn.codersfarm.org" class="btn btn-large btn-dark-gray btn-box-shadow btn-rounded btn-switch-text text-nowrap">
+                                <span>
+                                    <span class="btn-double-text" data-text="It's free!">Start learning</span>
+                                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navigation -->
+        </header>
+        <!-- end header -->
+        <!-- start section: hero -->
+        <section class="domovoi-band position-relative overflow-hidden inner-page-top">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-6 col-lg-6 col-md-11 md-mb-60px" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                        <div class="icon-with-text-style-08 mb-20px">
+                            <div class="feature-box feature-box-left-icon-middle">
+                                <div class="feature-box-icon feature-box-icon-rounded w-55px h-55px rounded-circle bg-amber me-15px">
+                                    <i class="feather icon-feather-smartphone d-inline-block icon-extra-medium text-dark-gray"></i>
+                                </div>
+                                <div class="feature-box-content last-paragraph-no-margin">
+                                    <span class="d-inline-block alt-font fs-19 fw-500 ls-minus-05px domovoi-eyebrow">Free, from Coders Farm</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="alt-font fw-600 ls-minus-2px text-white fs-60 lh-65 sm-fs-45 sm-lh-50 mb-25px">A voice assistant that runs on your phone. Airplane mode on.</h1>
+                        <p class="fs-19 lh-32 mb-30px">Ask by voice or text, and a language model on the phone answers. After a one-time download, what you ask never leaves your device.</p>
+                        <div>
+                            <a href="#download" class="btn btn-large btn-rounded btn-switch-text btn-domovoi fw-600 me-20px sm-me-10px mb-15px smooth-link">
+                                <span>
+                                    <span class="btn-double-text" data-text="Free, no account">Download for Android</span>
+                                    <span><i class="feather icon-feather-download"></i></span>
+                                </span>
+                            </a>
+                            <!-- becomes the Google Play badge once the listing is live -->
+                            <span class="domovoi-play-soon mb-15px"><i class="fa-brands fa-google-play"></i> Coming to Google Play</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 offset-xl-1 col-lg-6 text-center">
+                        <div class="domovoi-visual atropos" data-atropos>
+                            <div class="atropos-scale">
+                                <div class="atropos-rotate">
+                                    <div class="atropos-inner text-center w-100 overflow-visible">
+                                        <img data-atropos-offset="-2" class="domovoi-phone position-relative" src="/images/domovoi-assistant.webp" width="270" height="540" alt="The Domovoi assistant on a phone, labelled &quot;on this phone&quot;, answering why cats purr">
+                                        <img data-atropos-offset="8" class="domovoi-cat animation-float z-index-9" src="/images/domovoi-icon.webp" width="150" height="150" alt="Domovoi's amber cat">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section: hero -->
+        <!-- start section: download -->
+        <!-- On each new release: update the version, date, file names, sizes and SHA-256 values below from the release's SHA256SUMS. -->
+        <section id="download" class="domovoi-download">
+            <div class="container">
+                <div class="row justify-content-center mb-50px sm-mb-30px">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px mb-15px">Download Domovoi for Android</h2>
+                        <p class="fs-18 mb-0">Version 1.0.0-rc1, released October 15, 2026. Free and open source under the MIT license.</p>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="download-card">
+                            <h3 class="alt-font text-dark-gray fw-600">Most phones</h3>
+                            <p class="mb-0">For 64-bit phones, almost every phone from about 2017 on. Includes the on-device assistant. Pick this one if you're not sure.</p>
+                            <div class="download-meta">
+                                domovoi-1.0.0-rc1-arm64-v8a.apk &middot; 80.0 MB
+                                <span class="sha256" title="SHA-256">SHA-256: 268ff4212d5c403e1060870f30b61811a8fbe2b0878882de490ac8d17e20f474</span>
+                            </div>
+                            <a href="https://github.com/coders-farm-official/domovoi/releases/download/v1.0.0-rc1/domovoi-1.0.0-rc1-arm64-v8a.apk" class="btn btn-medium btn-rounded btn-domovoi fw-600"><i class="feather icon-feather-download me-5px"></i> Download the APK</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="download-card secondary">
+                            <h3 class="alt-font text-dark-gray fw-600">Older and budget phones</h3>
+                            <p class="mb-0">For 32-bit phones, including Android Go. Everything except the on-device assistant, which needs a 64-bit phone.</p>
+                            <div class="download-meta">
+                                domovoi-1.0.0-rc1-armeabi-v7a.apk &middot; 48.5 MB
+                                <span class="sha256" title="SHA-256">SHA-256: 206e595f6c515e33e3841231bc005f3845f2c80a160ad26b3fe90f4a5490b6c8</span>
+                            </div>
+                            <a href="https://github.com/coders-farm-official/domovoi/releases/download/v1.0.0-rc1/domovoi-1.0.0-rc1-armeabi-v7a.apk" class="btn btn-medium btn-rounded btn-outline-domovoi fw-600"><i class="feather icon-feather-download me-5px"></i> Download the APK</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-50px sm-mt-30px">
+                    <div class="col-lg-10">
+                        <h3 class="alt-font text-dark-gray fw-600 fs-24 mb-15px">What you need</h3>
+                        <ul class="requirements">
+                            <li>Android 8.0 or later.</li>
+                            <li>For the on-device assistant: a 64-bit phone sold with 8 GB of memory or more, and about 3 GB of free space.</li>
+                            <li>A one-time download of the assistant's language model, about 2.4 GB. Wi-Fi recommended; the app asks before it starts.</li>
+                        </ul>
+                        <p class="mb-0">Android asks before installing an app from outside Google Play; that's expected. Every file, the checksums and the release notes are on <a href="https://github.com/coders-farm-official/domovoi/releases/tag/v1.0.0-rc1" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">the GitHub release page</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section: download -->
+        <!-- start section: screenshots -->
+        <section class="domovoi-screens">
+            <div class="container">
+                <div class="row justify-content-center mb-50px sm-mb-30px">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px mb-15px">See it work</h2>
+                        <p class="fs-18 mb-0">On its own, the app is an assistant and a player for what's on your phone. Connected to a Domovoi server at home, it runs the whole house.</p>
+                    </div>
+                </div>
+                <!-- the airplane-mode demo video goes here once it's recorded: a <video> with a poster image, captions, preload="none", served from this site -->
+                <div class="row row-cols-2 row-cols-lg-4 g-4 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <figure class="col">
+                        <img src="/images/domovoi-assistant.webp" width="540" height="1080" loading="lazy" alt="The on-device assistant answering two questions, with the label &quot;on this phone&quot;">
+                        <figcaption>The assistant answers on the phone.</figcaption>
+                    </figure>
+                    <figure class="col">
+                        <img src="/images/domovoi-music.webp" width="540" height="1080" loading="lazy" alt="The music screen listing albums">
+                        <figcaption>Your music, with or without a server.</figcaption>
+                    </figure>
+                    <figure class="col">
+                        <img src="/images/domovoi-room-mode.webp" width="540" height="1080" loading="lazy" alt="Room mode's explanation screen, listing what changes before a phone becomes a room">
+                        <figcaption>Room mode explains itself before a spare phone becomes a room.</figcaption>
+                    </figure>
+                    <figure class="col">
+                        <img src="/images/domovoi-connect.webp" width="540" height="1080" loading="lazy" alt="The screen for connecting to a Domovoi server">
+                        <figcaption>Connect it to your Domovoi server.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- end section: screenshots -->
+        <!-- start section: does / doesn't -->
+        <section class="domovoi-lists bg-very-light-gray">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 does">
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px fs-30 mb-25px">What it does</h2>
+                        <ul>
+                            <li><i class="feather icon-feather-check-circle"></i><span>Answers typed or spoken questions with a language model running on the phone, and reads the answer aloud.</span></li>
+                            <li><i class="feather icon-feather-check-circle"></i><span>Works with no server, and in airplane mode once the model is on the phone.</span></li>
+                            <li><i class="feather icon-feather-check-circle"></i><span>Plays the music and videos on your phone, and shows its photos and the folders you choose.</span></li>
+                            <li><i class="feather icon-feather-check-circle"></i><span>With your Domovoi server: music in every room, radio, podcasts, timers, drop-in like an intercom, and room mode for a spare phone.</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 doesnt">
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px fs-30 mb-25px">What it doesn't</h2>
+                        <ul>
+                            <li><i class="feather icon-feather-x-circle"></i><span>The assistant can't see your photos, files, contacts or location. It sees the conversation and nothing else.</span></li>
+                            <li><i class="feather icon-feather-x-circle"></i><span>The phone's assistant doesn't listen for a wake word. The mic opens when you tap it and closes when you stop talking.</span></li>
+                            <li><i class="feather icon-feather-x-circle"></i><span>It doesn't set timers or control music yet. In this first version it's a conversation.</span></li>
+                            <li><i class="feather icon-feather-x-circle"></i><span>No account, no cloud fallback, no analytics, no ads and no crash reporting.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section: does / doesn't -->
+        <!-- start section: privacy, next, open -->
+        <section>
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px fs-30 mb-20px">Private by design</h2>
+                        <p>Coders Farm collects nothing from the app.</p>
+                        <p>The assistant hears and answers on the phone, and audio is never saved.</p>
+                        <p>Everything else talks only to your own Domovoi server, on your home network.</p>
+                        <a href="/privacy/#domovoi-app" class="text-dark-gray fw-600 text-decoration-line-bottom">Read the app's privacy policy</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px fs-30 mb-20px">Coming next</h2>
+                        <p><strong class="text-dark-gray">Your PC as the house's server.</strong> A Windows installer that turns the computer you already have into a Domovoi server.</p>
+                        <p><strong class="text-dark-gray">Rooms from spare devices.</strong> The old phone, tablet or laptop in a drawer becomes a room speaker.</p>
+                        <a href="https://forms.gle/wbz194RhuLmJdg3D8" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">Tell me when it's ready</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px fs-30 mb-20px">Built in the open</h2>
+                        <p>MIT licensed, with 1,100+ commits and more than 9,000 automated tests since July 2026. Built with AI coding agents, held to tests, a written security model and real releases.</p>
+                        <p>Want to build things like this? <a href="https://learn.codersfarm.org" class="text-dark-gray fw-600 text-decoration-line-bottom">Start free at learn.codersfarm.org.</a></p>
+                        <a href="https://github.com/coders-farm-official/domovoi" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">See the code on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section: privacy, next, open -->
+        <!-- start section: questions -->
+        <section class="bg-very-light-gray">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-10">
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px mb-30px text-center">Questions</h2>
+                        <div class="accordion accordion-style-06 text-start" id="domovoi-faq">
+                            <div class="accordion-item active-accordion">
+                                <div class="accordion-header">
+                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#domovoi-faq-01" aria-expanded="true" data-bs-parent="#domovoi-faq">
+                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Does it need the internet?</div>
+                                    </a>
+                                </div>
+                                <div id="domovoi-faq-01" class="accordion-collapse collapse show" data-bs-parent="#domovoi-faq">
+                                    <div class="accordion-body last-paragraph-no-margin">
+                                        <p>Once, to download the assistant's model (about 2.4 GB). After that the assistant answers in airplane mode. Your own music and videos play with no connection at all.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#domovoi-faq-02" aria-expanded="false" data-bs-parent="#domovoi-faq">
+                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Which phones does it run on?</div>
+                                    </a>
+                                </div>
+                                <div id="domovoi-faq-02" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
+                                    <div class="accordion-body last-paragraph-no-margin">
+                                        <p>Android 8.0 or later. The on-device assistant needs a 64-bit phone sold with 8 GB of memory or more; older and 32-bit phones get everything else.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#domovoi-faq-03" aria-expanded="false" data-bs-parent="#domovoi-faq">
+                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Do I need a Domovoi server?</div>
+                                    </a>
+                                </div>
+                                <div id="domovoi-faq-03" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
+                                    <div class="accordion-body last-paragraph-no-margin">
+                                        <p>No. The assistant and your phone's own music, videos and photos work without one. A server adds music in every room, timers, the intercom and more. Setting one up is covered <a href="https://github.com/coders-farm-official/domovoi" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">on GitHub</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#domovoi-faq-04" aria-expanded="false" data-bs-parent="#domovoi-faq">
+                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Is it really free? Who pays for it?</div>
+                                    </a>
+                                </div>
+                                <div id="domovoi-faq-04" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
+                                    <div class="accordion-body last-paragraph-no-margin">
+                                        <p>Yes: no ads, no subscription, and no data sold. Coders Farm is a nonprofit, and donations pay for it. <a href="https://donate.codersfarm.org" class="text-dark-gray fw-600 text-decoration-line-bottom">Support the work</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#domovoi-faq-05" aria-expanded="false" data-bs-parent="#domovoi-faq">
+                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Why does Android warn me about installing the APK?</div>
+                                    </a>
+                                </div>
+                                <div id="domovoi-faq-05" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
+                                    <div class="accordion-body last-paragraph-no-margin">
+                                        <p>Android asks before installing any app from outside Google Play. Allow it for your browser or file manager, install Domovoi, and turn the setting off again if you like. To be sure the file is ours, compare its SHA-256 with the one above.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#domovoi-faq-06" aria-expanded="false" data-bs-parent="#domovoi-faq">
+                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Who made it?</div>
+                                    </a>
+                                </div>
+                                <div id="domovoi-faq-06" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
+                                    <div class="accordion-body last-paragraph-no-margin">
+                                        <p>Coders Farm, a 501(c)(3) nonprofit in Lansing, Michigan that teaches people to code for free. In Slavic folklore a domovoi is the household's guardian spirit, often a cat; ours lives in your network. <a href="/about/" class="text-dark-gray fw-600 text-decoration-line-bottom">About Coders Farm</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section: questions -->
+        <!-- start footer -->
+        <footer class="bg-gradient-aztec-green position-relative">
+            <div class="position-absolute left-minus-100px top-25px">
+                <img src="/images/demo-elearning-bg-05.png" alt="" class="w-80">
+            </div>
+            <div class="background-position-center-top h-100 w-100 position-absolute left-0px top-0" style="background-image: url('/images/vertical-line-bg-small.svg')"></div>
+            <div class="container footer-dark text-center text-sm-start position-relative">
+                <div class="row mb-5 sm-mb-7 xs-mb-30px">
+                    <!-- start footer column -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column last-paragraph-no-margin md-mb-40px xs-mb-30px">
+                        <a href="/" class="footer-logo mb-15px d-inline-block">
+                            <img src="/images/cf-wide-logo.png" alt="Coders Farm">
+                        </a>
+                        <p class="lh-28">Growing IT professionals from hard working communities.</p>
+                        <p class="lh-28 fs-15">Coders Farm is a 501(c)(3) nonprofit in Lansing, Michigan.</p>
+                    </div>
+                    <!-- end footer column -->
+                    <!-- start footer column -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 ps-4 last-paragraph-no-margin md-mb-40px xs-mb-30px">
+                        <span class="fs-17 fw-600 d-block text-white mb-10px">Explore</span>
+                        <ul>
+                            <li><a href="https://learn.codersfarm.org">Learn</a></li>
+                            <li><a href="/domovoi/">Domovoi</a></li>
+                            <li><a href="/about/">About</a></li>
+                            <li><a href="https://donate.codersfarm.org">Donate</a></li>
+                            <li><a href="/privacy/">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <!-- end footer column -->
+                    <!-- start footer column -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 last-paragraph-no-margin xs-mb-30px">
+                        <span class="fs-17 fw-600 d-block text-white mb-10px">Connect</span>
+                        <ul>
+                            <li><a href="https://github.com/coders-farm-official" target="_blank">GitHub</a></li>
+                            <li><a href="https://discord.gg/j3H5XamSxg" target="_blank">Discord</a></li>
+                            <li><a href="mailto:info@codersfarm.org">info@codersfarm.org</a></li>
+                        </ul>
+                    </div>
+                    <!-- end footer column -->
+                    <!-- start footer column -->
+                    <div class="col-lg-3 col-md-12 col-sm-6 text-md-center text-lg-start">
+                        <a href="https://learn.codersfarm.org" class="btn btn-extra-large btn-dark-gray btn-box-shadow btn-rounded btn-switch-text mt-30px">
+                            <span>
+                                <span class="btn-double-text" data-text="It's free!">Start learning</span>
+                                <span><i class="fa-solid fa-arrow-right"></i></span>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- end footer column -->
+                </div>
+                <div class="row align-items-center footer-bottom border-top border-color-transparent-white-light pt-30px g-0">
+                    <!-- start footer menu -->
+                    <div class="col-xl-7 ps-0 text-center text-xl-start lg-mb-10px">
+                        <ul class="footer-navbar fs-16 lh-normal">
+                            <li class="nav-item">
+                                <a class="twitter" href="https://x.com/coders_farm" target="_blank" aria-label="Coders Farm on X">
+                                    <i class="fa-brands fa-x-twitter fa-2xl fa-bounce"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </li>
+                            <li class="nav-item">
+                                <a class="linkedin" href="https://www.linkedin.com/company/7802043/" target="_blank" aria-label="Coders Farm on LinkedIn">
+                                    <i class="fa-brands fa-linkedin-in fa-2xl fa-beat"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </li>
+                            <li class="nav-item">
+                                <a class="facebook" href="https://www.facebook.com/codersfarm" target="_blank" aria-label="Coders Farm on Facebook">
+                                    <i class="fa-brands fa-facebook-f fa-2xl fa-shake"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end footer menu -->
+                    <!-- start copyright -->
+                    <div class="col-xl-5 last-paragraph-no-margin text-center text-xl-end">
+                        <p class="fs-16">&copy; 2026 Coders Farm, Inc.</p>
+                    </div>
+                    <!-- start copyright -->
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <!-- start scroll progress -->
+        <div class="scroll-progress d-none d-xxl-block">
+            <a href="#" class="scroll-top" aria-label="scroll">
+                <span class="scroll-text">Back to top</span><span class="scroll-line"><span class="scroll-point"></span></span>
+            </a>
+        </div>
+        <!-- end scroll progress -->
+        <!-- javascript libraries -->
+        <script type="text/javascript" src="/js/jquery.js"></script>
+        <script type="text/javascript" src="/js/vendors.min.js"></script>
+        <script type="text/javascript" src="/js/main.js"></script>
+    </body>
+</html>
