@@ -1,0 +1,87 @@
+/* Coders Farm overrides on top of the template stylesheets. Keep the template files untouched. */
+
+/* "Don't believe us?" cards: one image shape, so the 2x2 grid lines up */
+.blog-masonry .blog-image img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Domovoi band: Domovoi's own colors (docs/design in the domovoi repo), amber as the only accent */
+.domovoi-band {
+    --domovoi-amber: #F2A618;
+    --domovoi-amber-hover: #F9AD26;
+    --domovoi-brown: #1F1A14;
+    background: radial-gradient(ellipse at 80% 20%, #2e2519 0%, var(--domovoi-brown) 60%);
+    color: rgba(255, 255, 255, 0.78);
+}
+.domovoi-band p { color: rgba(255, 255, 255, 0.78); }
+.domovoi-band h2 { color: #fff; }
+.domovoi-band a:not(.btn) { color: var(--domovoi-amber); }
+.domovoi-band a:not(.btn):hover { color: var(--domovoi-amber-hover); }
+.domovoi-band .bg-amber { background-color: var(--domovoi-amber); }
+.domovoi-band .domovoi-eyebrow { color: #fff; }
+.domovoi-band .domovoi-folklore { font-style: italic; border-left: 3px solid var(--domovoi-amber); padding-left: 15px; }
+.domovoi-band .domovoi-points { list-style: none; padding: 0; margin: 25px 0 30px; }
+.domovoi-band .domovoi-points li { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; color: #fff; }
+.domovoi-band .domovoi-points i { color: var(--domovoi-amber); font-size: 22px; line-height: 28px; }
+.domovoi-band .domovoi-proof { font-size: 15px; color: rgba(255, 255, 255, 0.6); }
+.domovoi-band .btn-domovoi { background-color: var(--domovoi-amber); border-color: var(--domovoi-amber); color: var(--domovoi-brown); }
+.domovoi-band .btn-domovoi:hover { background-color: var(--domovoi-amber-hover); border-color: var(--domovoi-amber-hover); color: var(--domovoi-brown); }
+.domovoi-band .domovoi-visual { position: relative; max-width: 420px; margin: 0 auto; }
+.domovoi-band .domovoi-phone { width: 270px; border: 10px solid #3a3026; border-radius: 38px; box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5); }
+.domovoi-band .domovoi-cat { position: absolute; width: 150px; left: 0; top: 30px; filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.45)); }
+.domovoi-band a.domovoi-permalink { position: relative; display: inline-block; vertical-align: middle; font-size: 22px; line-height: 1; padding: 8px; border-radius: 50%; color: rgba(255, 255, 255, 0.45); transition: color 0.2s, background-color 0.2s; }
+.domovoi-band a.domovoi-permalink:hover, .domovoi-band a.domovoi-permalink:focus-visible { color: var(--domovoi-amber); background-color: rgba(255, 255, 255, 0.08); }
+.domovoi-band a.domovoi-permalink.copied::after { content: attr(data-copy-status); position: absolute; left: 100%; top: 50%; transform: translateY(-50%); margin-left: 8px; padding: 4px 10px; border-radius: 4px; background: var(--domovoi-amber); color: var(--domovoi-brown); font-family: var(--primary-font); font-size: 13px; font-weight: 600; letter-spacing: 0; white-space: nowrap; }
+.domovoi-band .domovoi-says { font-size: 38px; line-height: 1.2; color: var(--domovoi-amber); opacity: 0.85; white-space: nowrap; padding: 0 35px; }
+@media (max-width: 575px) {
+    .domovoi-band .domovoi-phone { width: 220px; }
+    .domovoi-band .domovoi-cat { width: 110px; }
+    .domovoi-band .domovoi-says { font-size: 26px; }
+}
+
+/* /domovoi */
+.domovoi-band .domovoi-play-soon { display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; border: 1px dashed rgba(255, 255, 255, 0.35); border-radius: 50px; color: rgba(255, 255, 255, 0.7); font-size: 15px; }
+.domovoi-download { background: #FCFAF6; }
+.domovoi-download .download-card { height: 100%; padding: 35px; border-radius: 8px; background: #fff; box-shadow: 0 10px 40px rgba(31, 26, 20, 0.08); border-top: 4px solid #F2A618; }
+.domovoi-download .download-card.secondary { border-top-color: #d8cfc2; }
+.domovoi-download .download-card h3 { font-size: 24px; line-height: 32px; margin-bottom: 8px; }
+.domovoi-download .download-meta { font-size: 14px; color: #6b6259; margin: 15px 0 20px; }
+.domovoi-download .sha256 { display: block; font-family: Consolas, 'Courier New', monospace; font-size: 12px; line-height: 18px; word-break: break-all; color: #1F1A14; background: #f4efe7; padding: 8px 10px; border-radius: 4px; margin-top: 6px; }
+.domovoi-download .btn-domovoi { background-color: #F2A618; border-color: #F2A618; color: #1F1A14; }
+.domovoi-download .btn-domovoi:hover { background-color: #F9AD26; border-color: #F9AD26; color: #1F1A14; }
+.domovoi-download .btn-outline-domovoi { border: 2px solid #1F1A14; color: #1F1A14; background: transparent; }
+.domovoi-download .btn-outline-domovoi:hover { background: #1F1A14; color: #fff; }
+.domovoi-download .requirements li, .domovoi-lists li { margin-bottom: 10px; }
+.domovoi-screens figure { margin: 0 0 30px; }
+.domovoi-screens img { width: 100%; max-width: 240px; border: 8px solid #3a3026; border-radius: 30px; box-shadow: 0 25px 50px rgba(31, 26, 20, 0.25); }
+.domovoi-screens figcaption { margin-top: 15px; font-size: 15px; line-height: 22px; color: #1F1A14; }
+.domovoi-lists ul { list-style: none; padding: 0; }
+.domovoi-lists li { display: flex; gap: 12px; align-items: flex-start; }
+.domovoi-lists li i { font-size: 20px; line-height: 28px; flex: none; }
+.domovoi-lists .does i { color: #2EA043; }
+.domovoi-lists .doesnt i { color: #b5492f; }
+
+/* placeholders the owner fills in before launch: visible on purpose, so they can't be missed */
+.owner-todo { border: 2px dashed #d5d52b; background: #fbfbe8; color: #313e3b; padding: 14px 18px; border-radius: 6px; font-size: 15px; }
+
+/* /about */
+.press-kit li { margin-bottom: 10px; }
+.about-promise { border-left: 4px solid var(--base-color); padding: 20px 25px; background: #f7f8f5; }
+.press-kit .boilerplate { border-left: 4px solid var(--base-color); padding: 18px 22px; background: #f7f8f5; }
+
+/* /privacy */
+.policy h2 { font-size: 30px; line-height: 38px; margin: 50px 0 15px; }
+.policy h3 { font-size: 21px; line-height: 30px; margin: 30px 0 10px; }
+.policy ul { padding-left: 20px; margin-bottom: 20px; }
+.policy li { margin-bottom: 8px; list-style: disc outside; }
+.policy li::marker { color: var(--dark-gray); }
+.policy a { color: var(--dark-gray); text-decoration: underline; text-underline-offset: 3px; }
+.policy .short-version { border-left: 4px solid var(--base-color); padding: 20px 25px; background: #f7f8f5; }
+
+/* inner pages: room for the fixed header above the first section */
+.inner-page-top { padding-top: 170px; }
+@media (max-width: 991px) { .inner-page-top { padding-top: 140px; } }
+@media (max-width: 575px) { .inner-page-top { padding-top: 120px; } }

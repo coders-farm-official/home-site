@@ -4,9 +4,21 @@
         <title>Coders Farm - Learn to code, get a job.</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="author" content="ThemeZaa">
+        <meta name="author" content="Coders Farm">
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta name="description" content="Our mission statement is to grow professional software engineers from hard working communities.">
+        <meta name="description" content="Free, self-paced coding lessons from a Lansing, Michigan nonprofit. Learn web development and Java in your browser, no account needed.">
+        <link rel="canonical" href="https://codersfarm.org/">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Coders Farm">
+        <meta property="og:url" content="https://codersfarm.org/">
+        <meta property="og:title" content="Coders Farm: learn to code, get a job">
+        <meta property="og:description" content="Free, self-paced coding lessons from a Lansing, Michigan nonprofit. Learn web development and Java in your browser, no account needed.">
+        <meta property="og:image" content="https://codersfarm.org/images/og-coders-farm.jpg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="Coders Farm: Learn to code, get a job. Free, self-paced lessons from a Lansing, Michigan nonprofit.">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@coders_farm">
         <!-- favicon icon -->
         <link rel="shortcut icon" href="images/cropped-codersfarm.png">
         <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
@@ -21,6 +33,28 @@
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/responsive.css"/>
         <link rel="stylesheet" href="css/elearning.css" />
+        <link rel="stylesheet" href="css/site.css" />
+        <script src="js/site.js"></script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Coders Farm, Inc.",
+            "alternateName": "Coders Farm",
+            "url": "https://codersfarm.org/",
+            "logo": "https://codersfarm.org/images/press/coders-farm-logo-wide.png",
+            "email": "info@codersfarm.org",
+            "nonprofitStatus": "Nonprofit501c3",
+            "taxID": "99-3749437",
+            "address": { "@type": "PostalAddress", "addressLocality": "Lansing", "addressRegion": "MI", "addressCountry": "US" },
+            "sameAs": [
+                "https://x.com/coders_farm",
+                "https://www.linkedin.com/company/7802043/",
+                "https://www.facebook.com/codersfarm",
+                "https://github.com/coders-farm-official"
+            ]
+        }
+        </script>
     </head>
     <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-style="modern" data-mobile-nav-bg-color="#313e3b">
         <!-- start header -->
@@ -29,10 +63,10 @@
             <nav class="navbar navbar-expand-lg header-transparent bg-transparent header-reverse" data-header-hover="light">
                 <div class="container-fluid">
                     <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                        <a class="navbar-brand" href="demo-elearning.html">
-                            <img src="images/cf-wide-logo.png" alt="" class="default-logo">
-                            <img src="images/cf-wide-logo.png" alt="" class="alt-logo">
-                            <img src="images/cf-wide-logo.png" alt="" class="mobile-logo"> 
+                        <a class="navbar-brand" href="/">
+                            <img src="images/cf-wide-logo.png" alt="Coders Farm" class="default-logo">
+                            <img src="images/cf-wide-logo.png" alt="Coders Farm" class="alt-logo">
+                            <img src="images/cf-wide-logo.png" alt="Coders Farm" class="mobile-logo">
                         </a>
                     </div>
                     <div class="col-auto menu-order position-static">
@@ -43,10 +77,18 @@
                             <span class="navbar-toggler-line"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav"> 
-                            <ul class="navbar-nav alt-font"> 
+                            <ul class="navbar-nav alt-font">
+                                <li class="nav-item"><a href="https://learn.codersfarm.org" class="nav-link">Learn</a></li>
+                                <li class="nav-item"><a href="/domovoi/" class="nav-link">Domovoi</a></li>
+                                <li class="nav-item"><a href="/about/" class="nav-link">About</a></li>
+                                <li class="nav-item"><a href="https://donate.codersfarm.org" class="nav-link">Donate</a></li>
                                 <li class="nav-item">
-                                    <a class="twitter" href="https://twitter.com/coders_farm" target="_blank">
-                                        <i class="fa-brands fa-twitter fa-2xl"></i>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </li>
+                                <li class="nav-item">
+                                    <a class="twitter" href="https://x.com/coders_farm" target="_blank" aria-label="Coders Farm on X">
+                                        <i class="fa-brands fa-x-twitter fa-2xl"></i>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -54,7 +96,7 @@
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </li>
                                 <li class="nav-item">
-                                    <a class="linkedin" href="https://www.linkedin.com/company/7802043/admin/feed/posts/" target="_blank">
+                                    <a class="linkedin" href="https://www.linkedin.com/company/7802043/" target="_blank" aria-label="Coders Farm on LinkedIn">
                                         <i class="fa-brands fa-linkedin-in fa-2xl"></i>
                                     </a>
                                 </li>
@@ -63,7 +105,7 @@
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </li>
                                 <li class="nav-item">
-                                    <a class="facebook" href="https://www.facebook.com/codersfarm" target="_blank">
+                                    <a class="facebook" href="https://www.facebook.com/codersfarm" target="_blank" aria-label="Coders Farm on Facebook">
                                         <i class="fa-brands fa-facebook-f fa-2xl"></i>
                                     </a>
                                 </li>
@@ -72,9 +114,9 @@
                     </div>
                     <div class="col-auto col-lg-2 text-end d-none d-sm-flex">
                         <div class="header-icon" style="margin-bottom: 5px;">
-                            <a href="#modal-popup5" class="btn btn-large btn-dark-gray btn-box-shadow btn-rounded btn-switch-text slide-up-animation">
+                            <a href="https://learn.codersfarm.org" class="btn btn-large btn-dark-gray btn-box-shadow btn-rounded btn-switch-text text-nowrap">
                                 <span>
-                                    <span class="btn-double-text" data-text="It's easy!">Sign Up</span>
+                                    <span class="btn-double-text" data-text="It's free!">Start learning</span>
                                     <span><i class="fa-solid fa-arrow-right"></i></span>
                                 </span>
                             </a>
@@ -94,21 +136,21 @@
                     <div class="col-xl-5 col-lg-6 col-md-12 text-white text-center text-lg-start position-relative z-index-1 d-flex flex-column justify-content-center h-100 md-mt-50px md-mb-20px xs-mb-10px" data-anime='{ "el": "childs", "opacity": [0, 1], "rotateY": [90, 0], "rotateZ": [-10, 0], "translateY": [80, 0], "translateZ": [50, 0], "staggervalue": 200, "duration": 600, "delay": 100, "easing": "easeOutCirc" }'>
                         <span class="alt-font fs-75 lh-65 sm-fs-60 fw-500 mb-25px ls-minus-2px">Learn to code, get a job.</span>
                         <div class="mb-30px w-80 md-w-60 sm-w-100 d-block mx-auto mx-lg-0 overflow-hidden">
-                            <span class="fs-18 fw-300 d-inline-block">We turn hard working people into employable software engineers.</span>
+                            <span class="fs-18 fw-300 d-inline-block">We turn hard working people into employable software engineers. Free, self-paced, right in your browser.</span>
                         </div>
                         <div class="overflow-hidden">
-                            <a href="#down-section" class="btn section-link btn-extra-large btn-base-color btn-rounded btn-switch-text fw-600 d-inline-block me-25px sm-me-10px align-middle left-icon">
+                            <a href="#domovoi" class="btn btn-extra-large btn-base-color btn-rounded btn-switch-text fw-600 d-inline-block me-25px sm-me-10px align-middle left-icon smooth-link">
                                 <span>
                                     <span><i class="feather icon-feather-arrow-down-circle"></i></span>
-                                    <span class="btn-double-text ls-minus-05px" data-text="Click!">Learn More</span>
+                                    <span class="btn-double-text ls-minus-05px" data-text="Hey Domovoi!">Meet Domovoi</span>
                                 </span>
                             </a>
-                            <a href="https://www.youtube.com/embed/fCgTAINEyVQ" class="btn btn-link btn-hover-animation-switch btn-extra-large text-white popup-youtube btn-icon-left">
+                            <a href="https://learn.codersfarm.org" class="btn btn-link btn-hover-animation-switch btn-extra-large text-white btn-icon-left">
                                 <span>
-                                    <span class="btn-text">What's coming soon?</span>
-                                    <span class="btn-icon"><i class="feather icon-feather-youtube"></i></span>
-                                    <span class="btn-icon"><i class="feather icon-feather-youtube"></i></span>
-                                </span> 
+                                    <span class="btn-text">Start learning free</span>
+                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right-circle"></i></span>
+                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right-circle"></i></span>
+                                </span>
                             </a>
                         </div>
                     </div>
@@ -117,7 +159,7 @@
                             <div class="atropos-scale">
                                 <div class="atropos-rotate">
                                     <div class="atropos-inner text-center w-100">
-                                        <img data-atropos-offset="1" class="position-relative z-index-9 animation-float" src="images/soon-logo.png" alt="">
+                                        <img data-atropos-offset="1" class="position-relative z-index-9 animation-float" src="images/lets-go.webp" width="1024" height="1024" alt="A coder in headphones at a laptop, with the words Let's Go">
                                     </div> 
                                 </div>
                             </div>
@@ -134,7 +176,7 @@
             </div>
             <div class="container">
                 <div class="text-center position-absolute top-minus-40px left-0px right-0px z-index-1 d-none d-md-inline-block" data-anime='{ "opacity": [0, 1], "translate": [0, 0], "staggervalue": 100, "easing": "easeOutQuad" }'>
-                    <a href="#we-listen" class="d-block section-link">
+                    <a href="#we-listen" class="d-block smooth-link" aria-label="Scroll down">
                         <div class="d-flex justify-content-center align-items-center mx-auto box-shadow-medium-bottom rounded-circle h-70px w-70px text-dark-gray bg-white">
                             <i class="bi bi-mouse icon-very-medium lh-0px"></i>
                         </div>
@@ -153,9 +195,9 @@
                             </div>
                         </div>
                         <h2 class="alt-font text-dark-gray fw-600 ls-minus-3px mx-auto">Full Stack Java</br>Web Development</h2>
-                        <a href="#we-listen" class="btn btn-large btn-dark-gray btn-box-shadow btn-rounded btn-switch-text">
+                        <a href="https://learn.codersfarm.org" class="btn btn-large btn-dark-gray btn-box-shadow btn-rounded btn-switch-text text-nowrap">
                             <span>
-                                <span class="btn-double-text" data-text="Click!">Learn more</span>
+                                <span class="btn-double-text" data-text="It's free!">See the curriculum</span>
                                 <span><i class="fa-solid fa-arrow-right"></i></span>
                             </span>
                         </a>
@@ -171,6 +213,7 @@
                                     <div class="feature-box-content last-paragraph-no-margin pt-30 md-pt-21 sm-pt-40px">
                                         <span class="text-dark-gray fs-20 d-inline-block fw-600 mb-5px">What users see</span>
                                         <p>HTML, CSS and javascript... primarily. Every website in existence boils down to these 3 languages.</p>
+                                        <p class="mt-10px mb-10px"><a href="https://learn.codersfarm.org/lessons/web-basics/01-intro-to-html.html" class="text-dark-gray fw-600 text-decoration-line-bottom">Web Basics &middot; 6 lessons</a></p>
                                         <span class="w-60px h-3px bg-yellow d-inline-block"></span>
                                     </div>
                                 </div>
@@ -185,6 +228,7 @@
                                     <div class="feature-box-content last-paragraph-no-margin pt-30 md-pt-21 sm-pt-40px">
                                         <span class="text-dark-gray fs-20 d-inline-block fw-600 mb-5px">The infamous "Processing..."</span>
                                         <p>Databases, configs and so much more. There is no website to see, without a back end to serve it.</p>
+                                        <p class="mt-10px mb-10px"><a href="https://learn.codersfarm.org/lessons/java-spring/11-setting-up-java.html" class="text-dark-gray fw-600 text-decoration-line-bottom">Java &amp; Spring Boot + Databases &middot; 12 lessons</a></p>
                                         <span class="w-60px h-3px bg-yellow d-inline-block"></span>
                                     </div>
                                 </div>
@@ -199,6 +243,7 @@
                                     <div class="feature-box-content last-paragraph-no-margin pt-30 md-pt-21 sm-pt-40px">
                                         <span class="text-dark-gray fs-20 d-inline-block fw-600 mb-5px">In demand skills</span>
                                         <p>There are plenty of reasons to learn to code, we focus on employability.</p>
+                                        <p class="mt-10px mb-10px"><a href="https://learn.codersfarm.org/lessons/resumator/23-project-planning-setup.html" class="text-dark-gray fw-600 text-decoration-line-bottom">Resumator capstone + Career &middot; 9 lessons</a></p>
                                         <span class="w-60px h-3px bg-yellow d-inline-block"></span>
                                     </div>
                                 </div>
@@ -220,7 +265,7 @@
                                 <div class="atropos-rotate">
                                     <div class="atropos-inner text-center w-100 overflow-visible">
                                         <div data-atropos-offset="-5" class="position-absolute left-0px">
-                                            <img src="images/ppl-cropped-835-710.png" alt="">
+                                            <img src="images/ppl-cropped-835-710.png" alt="Two people working together at a laptop">
                                         </div>
                                         <img data-atropos-offset="5" class="position-relative z-index-9" src="images/code-icon-cropped-835-710.png" alt="">
                                     </div> 
@@ -281,15 +326,16 @@
                                 <div id="accordion-style-07-03" class="accordion-collapse collapse" data-bs-parent="#accordion-style-07">
                                     <div class="accordion-body last-paragraph-no-margin">
                                         <p>You'll be learning from people who are actively practicing what they're preaching. Professionally employed, doing this on the side to catch you up to speed and prepare you to hit the ground running!</p>
+                                        <p class="mt-10px"><a href="#domovoi" class="smooth-link text-dark-gray fw-600 text-decoration-line-bottom">We ship real software, too. Meet Domovoi.</a></p>
                                         <i class="line-icon-Footprint icon-extra-double-large opacity-2"></i>
                                     </div>
                                 </div>
                             </div>
                             <!-- end accordion item -->
                         </div>
-                        <a href="#modal-popup5" class="btn btn-extra-large btn-dark-gray btn-box-shadow btn-rounded btn-switch-text mt-30px slide-up-animation">
+                        <a href="https://learn.codersfarm.org" class="btn btn-extra-large btn-dark-gray btn-box-shadow btn-rounded btn-switch-text mt-30px">
                             <span>
-                                <span class="btn-double-text" data-text="It's easy!">Create an Account</span>
+                                <span class="btn-double-text" data-text="No account needed!">Start learning</span>
                                 <span><i class="fa-solid fa-arrow-right"></i></span>
                             </span>
                         </a>
@@ -324,6 +370,72 @@
             </div>
         </section>
         <!-- end section -->
+        <!-- start section: Domovoi -->
+        <section id="domovoi" class="domovoi-band position-relative overflow-hidden">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-6 col-lg-6 col-md-11 md-mb-60px" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                        <div class="icon-with-text-style-08 mb-20px">
+                            <div class="feature-box feature-box-left-icon-middle">
+                                <div class="feature-box-icon feature-box-icon-rounded w-55px h-55px rounded-circle bg-amber me-15px">
+                                    <i class="bi bi-house-heart d-inline-block icon-extra-medium text-dark-gray"></i>
+                                </div>
+                                <div class="feature-box-content last-paragraph-no-margin">
+                                    <span class="d-inline-block alt-font fs-19 fw-500 ls-minus-05px domovoi-eyebrow">We walk the walk</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="alt-font fw-600 ls-minus-3px mb-20px">Meet Domovoi. <a href="#domovoi" class="domovoi-permalink" data-copy-link title="Copy a link to this section" aria-label="Copy a link to this section"><i class="feather icon-feather-link"></i></a></h2>
+                        <p class="fs-19 lh-32 mb-20px">A voice assistant for your home that runs on your own hardware. Your voice never leaves your network, and when the internet goes out, Domovoi keeps working.</p>
+                        <p class="domovoi-folklore">In Slavic folklore, a domovoi is the household's guardian spirit, often a cat. Ours lives in your network, never someone else's cloud.</p>
+                        <ul class="domovoi-points">
+                            <li><i class="feather icon-feather-smartphone"></i><span><strong>On your phone:</strong> an AI assistant that answers in airplane mode.</span></li>
+                            <li><i class="feather icon-feather-speaker"></i><span><strong>In every room:</strong> Raspberry Pi speakers, or the old laptop and tablet in a drawer.</span></li>
+                            <li><i class="feather icon-feather-shield"></i><span>No account. No cloud. No ads.</span></li>
+                        </ul>
+                        <div>
+                            <a href="/domovoi/" class="btn btn-large btn-rounded btn-switch-text btn-domovoi fw-600 me-20px sm-me-10px mb-15px">
+                                <span>
+                                    <span class="btn-double-text" data-text="Free download">Meet Domovoi</span>
+                                    <span><i class="fa-solid fa-arrow-right"></i></span>
+                                </span>
+                            </a>
+                            <a href="https://forms.gle/wbz194RhuLmJdg3D8" target="_blank" class="fw-600 text-decoration-line-bottom mb-15px d-inline-block">Tell me when it's ready</a>
+                        </div>
+                        <p class="domovoi-proof mt-15px mb-10px">Free and MIT licensed. 1,100+ commits and more than 9,000 automated tests since July 2026.</p>
+                        <p class="mb-0">Built with Python and Kotlin by the people who write our lessons. Want to build something like this? <a href="https://learn.codersfarm.org" class="fw-600 text-decoration-line-bottom">Start with lesson one.</a></p>
+                    </div>
+                    <div class="col-xl-5 offset-xl-1 col-lg-6 text-center">
+                        <div class="domovoi-visual atropos" data-atropos>
+                            <div class="atropos-scale">
+                                <div class="atropos-rotate">
+                                    <div class="atropos-inner text-center w-100 overflow-visible">
+                                        <img data-atropos-offset="-2" class="domovoi-phone position-relative" src="images/domovoi-assistant.webp" width="270" height="540" alt="The Domovoi assistant on a phone, labelled &quot;on this phone&quot;, answering why cats purr">
+                                        <img data-atropos-offset="8" class="domovoi-cat animation-float z-index-9" src="images/domovoi-icon.webp" width="150" height="150" alt="Domovoi's amber cat">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- things you can say to Domovoi, scrolling the other way from the company marquee -->
+            <div class="container-fluid">
+                <div class="row position-relative mt-60px xs-mt-30px">
+                    <div class="col swiper swiper-width-auto feather-shadow text-center" data-slider-options='{ "slidesPerView": "auto", "spaceBetween":70, "centeredSlides": true, "speed": 20000, "loop": true, "allowTouchMove": false, "autoplay": { "delay":1, "disableOnInteraction": false, "reverseDirection": true }, "effect": "slide" }'>
+                        <div class="swiper-wrapper marquee-slide">
+                            <div class="swiper-slide"><div class="alt-font fw-600 ls-minus-1px domovoi-says">&ldquo;Hey Domovoi, play jazz in the garage&rdquo;</div></div>
+                            <div class="swiper-slide"><div class="alt-font fw-600 ls-minus-1px domovoi-says">&ldquo;Set a timer for twelve minutes&rdquo;</div></div>
+                            <div class="swiper-slide"><div class="alt-font fw-600 ls-minus-1px domovoi-says">&ldquo;Drop in on the kitchen&rdquo;</div></div>
+                            <div class="swiper-slide"><div class="alt-font fw-600 ls-minus-1px domovoi-says">&ldquo;I'm Sarah&rdquo;</div></div>
+                            <div class="swiper-slide"><div class="alt-font fw-600 ls-minus-1px domovoi-says">&ldquo;What's on my calendar?&rdquo;</div></div>
+                            <div class="swiper-slide"><div class="alt-font fw-600 ls-minus-1px domovoi-says">&ldquo;Play the news&rdquo;</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section: Domovoi -->
         <!-- start section -->
         <section class="bg-gradient-tranquil-white overflow-hidden position-relative overlap-height pb-5 md-pb-7 xs-pb-50px">
             <div class="container overlap-gap-section">
@@ -334,13 +446,13 @@
                 </div>
                 <div class="row">  
                     <div class="col-12">
-                        <ul class="blog-masonry blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-1col xs-grid-1col gutter-extra-large" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                        <ul class="blog-masonry blog-wrapper grid-loading grid grid-2col xl-grid-2col lg-grid-2col md-grid-2col sm-grid-1col xs-grid-1col gutter-extra-large" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
                             <li class="grid-sizer"></li>
                             <!-- start blog item -->
                             <li class="grid-item">
                                 <div class="card border-0 border-radius-4px overflow-hidden box-shadow-large box-shadow-extra-large-hover">
                                     <div class="card-top d-flex align-items-center">
-                                        <a href="demo-elearning-blog.html"><img src="images/Forbes_circle.png" class="avtar" alt=""></a>
+                                        <a target="_blank" href="https://www.forbes.com/sites/jackkelly/2023/12/01/these-are-the-10-highest-paying-tech-jobs-in-the-us/"><img src="images/Forbes_circle.png" class="avtar" alt="Forbes"></a>
                                         <span class="fs-16">By <a target="_blank" href="https://www.forbes.com/sites/jackkelly/2023/12/01/these-are-the-10-highest-paying-tech-jobs-in-the-us/" class="text-dark-gray fw-600">Forbes</a></span>
                                     </div>
                                     <div class="blog-image position-relative overflow-hidden">
@@ -359,7 +471,7 @@
                             <li class="grid-item">
                                 <div class="card border-0 border-radius-4px overflow-hidden box-shadow-large box-shadow-extra-large-hover">
                                     <div class="card-top d-flex align-items-center">
-                                        <a href="demo-elearning-blog.html"><img src="images/businessinsiderlogo.png" class="avtar" alt=""></a>
+                                        <a target="_blank" href="https://www.businessinsider.com/best-high-paying-fast-growing-jobs-careers#1-software-developers-30"><img src="images/businessinsiderlogo.png" class="avtar" alt="Business Insider"></a>
                                         <span class="fs-16">By <a target="_blank" href="https://www.businessinsider.com/best-high-paying-fast-growing-jobs-careers#1-software-developers-30" class="text-dark-gray fw-600">Business Insider</a></span>
                                     </div>
                                     <div class="blog-image position-relative overflow-hidden">
@@ -393,6 +505,25 @@
                                 </div>
                             </li>
                             <!-- end blog item -->
+                            <!-- start blog item -->
+                            <li class="grid-item">
+                                <div class="card border-0 border-radius-4px overflow-hidden box-shadow-large box-shadow-extra-large-hover">
+                                    <div class="card-top d-flex align-items-center">
+                                        <a target="_blank" href="https://fortune.com/2026/02/13/tech-giant-ibm-tripling-gen-z-entry-level-hiring-according-to-chro-rewriting-jobs-ai-era/"><img src="images/fortune-avatar.svg" class="avtar" alt="Fortune"></a>
+                                        <span class="fs-16">By <a target="_blank" href="https://fortune.com/2026/02/13/tech-giant-ibm-tripling-gen-z-entry-level-hiring-according-to-chro-rewriting-jobs-ai-era/" class="text-dark-gray fw-600">Fortune</a></span>
+                                    </div>
+                                    <div class="blog-image position-relative overflow-hidden">
+                                        <a target="_blank" href="https://fortune.com/2026/02/13/tech-giant-ibm-tripling-gen-z-entry-level-hiring-according-to-chro-rewriting-jobs-ai-era/"><img src="images/ibm-entry-level-card.svg" alt="3 times: entry-level hiring at IBM in 2026, including software developers" /></a>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="post-content p-11 md-p-9">
+                                            <a target="_blank" href="https://fortune.com/2026/02/13/tech-giant-ibm-tripling-gen-z-entry-level-hiring-according-to-chro-rewriting-jobs-ai-era/" class="card-title mb-10px fw-600 fs-19 lh-28 text-dark-gray d-inline-block">IBM is tripling entry-level hiring</a>
+                                            <p class="mb-0">Its HR chief says that includes software developers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end blog item -->
                         </ul>
                     </div>
                 </div>
@@ -404,8 +535,8 @@
                                 <i class="feather icon-feather-mail fs-20 text-dark-gray"></i>
                             </div>
                             <div class="feature-box-content">
-                                <span class="text-dark-gray fw-500 fs-20 xs-fs-18 ls-minus-05px">Want an update as we grow? 
-                                    <a href="#modal-popup5" class="text-decoration-line-bottom-medium text-dark-gray fw-600 slide-up-animation">Make an account!</a>
+                                <span class="text-dark-gray fw-500 fs-20 xs-fs-18 ls-minus-05px">Want updates as we grow?
+                                    <a href="https://forms.gle/wbz194RhuLmJdg3D8" target="_blank" class="text-decoration-line-bottom-medium text-dark-gray fw-600">Join the email list.</a>
                                 </span>
                             </div>
                         </div>
@@ -419,14 +550,9 @@
                             </div>
                             <div class="feature-box-content">
                                 <span class="text-dark-gray fw-500 fs-20 xs-fs-18 ls-minus-05px">
-                                    Curious?
-                                    <a href="#modal-popup4" class="text-decoration-line-bottom-medium text-dark-gray fw-600 slide-up-animation">What's coming soon?</a>
+                                    Curious what we build?
+                                    <a href="#domovoi" class="smooth-link text-decoration-line-bottom-medium text-dark-gray fw-600">Meet Domovoi.</a>
                                 </span>
-                                <div id="modal-popup4" class="slide-up-popup mfp-hide col-xl-3 col-lg-6 col-md-7 col-11 mx-auto bg-white text-center modal-popup-main p-50px">
-                                    <span class="text-dark-gray fw-600 fs-24 mb-10px d-block">Non-profit Coding Bootcamp, essentially...</span>
-                                    <p>We are going to have many things to offer. Our mission statement is to grow professional software engineers from hard working communities. We are going to have many pathways into the tech industry, please stay tuned.</p>
-                                    <a class="btn btn-small btn-rounded btn-dark-gray popup-modal-dismiss mt-10px" href="#">Dismiss</a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -445,25 +571,40 @@
                 <div class="row mb-5 sm-mb-7 xs-mb-30px">
                     <!-- start footer column -->
                     <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column last-paragraph-no-margin md-mb-40px xs-mb-30px">
-                        <a href="demo-elearning.html" class="footer-logo mb-15px d-inline-block">
-                            <img src="images/cf-wide-logo.png" alt="">
+                        <a href="/" class="footer-logo mb-15px d-inline-block">
+                            <img src="images/cf-wide-logo.png" alt="Coders Farm">
                         </a>
                         <p class="lh-28">Growing IT professionals from hard working communities.</p>
-                    </div>
-                    <!-- end footer column -->  
-                    <!-- start footer column -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 ps-4 last-paragraph-no-margin md-mb-40px xs-mb-30px"> 
+                        <p class="lh-28 fs-15">Coders Farm is a 501(c)(3) nonprofit in Lansing, Michigan.</p>
                     </div>
                     <!-- end footer column -->
                     <!-- start footer column -->
-                    <div class="col-lg-3 col-md-4 col-sm-6 last-paragraph-no-margin xs-mb-30px"> 
+                    <div class="col-lg-3 col-md-4 col-sm-6 ps-4 last-paragraph-no-margin md-mb-40px xs-mb-30px">
+                        <span class="fs-17 fw-600 d-block text-white mb-10px">Explore</span>
+                        <ul>
+                            <li><a href="https://learn.codersfarm.org">Learn</a></li>
+                            <li><a href="/domovoi/">Domovoi</a></li>
+                            <li><a href="/about/">About</a></li>
+                            <li><a href="https://donate.codersfarm.org">Donate</a></li>
+                            <li><a href="/privacy/">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <!-- end footer column -->
+                    <!-- start footer column -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 last-paragraph-no-margin xs-mb-30px">
+                        <span class="fs-17 fw-600 d-block text-white mb-10px">Connect</span>
+                        <ul>
+                            <li><a href="https://github.com/coders-farm-official" target="_blank">GitHub</a></li>
+                            <li><a href="https://discord.gg/j3H5XamSxg" target="_blank">Discord</a></li>
+                            <li><a href="mailto:info@codersfarm.org">info@codersfarm.org</a></li>
+                        </ul>
                     </div>
                     <!-- end footer column -->
                     <!-- start footer column -->
                     <div class="col-lg-3 col-md-12 col-sm-6 text-md-center text-lg-start">
-                        <a href="#modal-popup5" class="btn btn-extra-large btn-dark-gray btn-box-shadow btn-rounded btn-switch-text mt-30px slide-up-animation">
+                        <a href="https://learn.codersfarm.org" class="btn btn-extra-large btn-dark-gray btn-box-shadow btn-rounded btn-switch-text mt-30px">
                             <span>
-                                <span class="btn-double-text" data-text="It's easy!">Sign Up</span>
+                                <span class="btn-double-text" data-text="It's free!">Start learning</span>
                                 <span><i class="fa-solid fa-arrow-right"></i></span>
                             </span>
                         </a>
@@ -475,8 +616,8 @@
                     <div class="col-xl-7 ps-0 text-center text-xl-start lg-mb-10px"> 
                         <ul class="footer-navbar fs-16 lh-normal"> 
                             <li class="nav-item">
-                                <a class="twitter" href="https://twitter.com/coders_farm" target="_blank">
-                                    <i class="fa-brands fa-twitter fa-2xl fa-bounce"></i>
+                                <a class="twitter" href="https://x.com/coders_farm" target="_blank" aria-label="Coders Farm on X">
+                                    <i class="fa-brands fa-x-twitter fa-2xl fa-bounce"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -484,7 +625,7 @@
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </li>
                             <li class="nav-item">
-                                <a class="linkedin" href="https://www.linkedin.com/company/7802043/admin/feed/posts/" target="_blank">
+                                <a class="linkedin" href="https://www.linkedin.com/company/7802043/" target="_blank" aria-label="Coders Farm on LinkedIn">
                                     <i class="fa-brands fa-linkedin-in fa-2xl fa-beat"></i>
                                 </a>
                             </li>
@@ -493,7 +634,7 @@
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </li>
                             <li class="nav-item">
-                                <a class="facebook" href="https://www.facebook.com/codersfarm" target="_blank">
+                                <a class="facebook" href="https://www.facebook.com/codersfarm" target="_blank" aria-label="Coders Farm on Facebook">
                                     <i class="fa-brands fa-facebook-f fa-2xl fa-shake"></i>
                                 </a>
                             </li>
@@ -502,19 +643,13 @@
                     <!-- end footer menu -->
                     <!-- start copyright -->
                     <div class="col-xl-5 last-paragraph-no-margin text-center text-xl-end">
-                        <p class="fs-16">&copy; 2024 Coders Farm</p>
+                        <p class="fs-16">&copy; 2026 Coders Farm, Inc.</p>
                     </div>
                     <!-- start copyright -->
                 </div>
             </div> 
         </footer>
         <!-- end footer -->
-        <div id="modal-popup5" class="slide-up-popup mfp-hide col-xl-3 col-lg-6 col-md-7 col-11 mx-auto bg-white text-center modal-popup-main p-50px">
-            <span class="text-dark-gray fw-600 fs-24 mb-10px d-block">Sorry, we're almost there...</span>
-            <p>We're designing our public app now so you can create your profile and see more of what we have to offer</p>
-            <p>Follow us on social media so you don't miss our launch!</p>
-            <a class="btn btn-small btn-rounded btn-dark-gray popup-modal-dismiss mt-10px" href="#">Dismiss</a>
-        </div>
         <!-- start scroll progress -->
         <div class="scroll-progress d-none d-xxl-block">
             <a href="#" class="scroll-top" aria-label="scroll">
