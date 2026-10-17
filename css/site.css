@@ -85,3 +85,6 @@
 .inner-page-top { padding-top: 170px; }
 @media (max-width: 991px) { .inner-page-top { padding-top: 140px; } }
 @media (max-width: 575px) { .inner-page-top { padding-top: 120px; } }
+
+/* hero: room between the green button and "...or meet Domovoi" when they stack */
+@media (max-width: 991px) { .hero-secondary-link { margin-top: 12px; } }
