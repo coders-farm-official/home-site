@@ -140,11 +140,36 @@
         });
     }
 
+    // Copy-command buttons: <button data-copy-command="id-of-code-element">. Copies that element's text; if the
+    // browser blocks copying, selects the command so it can be copied by hand.
+    function setupCopyCommands() {
+        var buttons = document.querySelectorAll('[data-copy-command]');
+        Array.prototype.forEach.call(buttons, function (button) {
+            button.addEventListener('click', function () {
+                var source = document.getElementById(button.getAttribute('data-copy-command'));
+                if (!source) {
+                    return;
+                }
+                copyText(source.textContent).then(function () {
+                    showCopyStatus(button, 'Copied');
+                }, function () {
+                    var range = document.createRange();
+                    range.selectNodeContents(source);
+                    var selection = window.getSelection();
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                    showCopyStatus(button, 'Selected');
+                });
+            });
+        });
+    }
+
     window.addEventListener('load', function () {
         var fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
         fontsReady.then(fitSwitchButtonLabels);
         setupSmoothLinks();
         setupCopyLinks();
+        setupCopyCommands();
         if (landingHash) {
             setTimeout(function () {
                 scrollToLandingSection(landingHash);

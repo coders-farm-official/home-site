@@ -126,9 +126,10 @@
         </header>
         <!-- end header -->
         <!-- start section: hero -->
-        <!-- Copy here and below is checked against the domovoi repo's main branch (README, docs/WINDOWS_HOST.md, docs/LINUX_HOST.md,
-             docs/SPARE_DEVICE_SATELLITES.md, docs/RELEASE_NOTES.md, android/README.md, docs/SECURITY.md). No versions, sizes or
-             checksums on purpose: every download link points at the current release. Search this file for TODO(1.3.0) when 1.3.0 ships. -->
+        <!-- Copy here and below is checked against the domovoi repo's v1.3.0 tag and main (README, docs/WINDOWS_HOST.md,
+             docs/LINUX_HOST.md, docs/SPARE_DEVICE_SATELLITES.md, docs/RELEASE_NOTES.md, docs/release/v1.3.0.md, android/README.md,
+             SECURITY.md). No Domovoi versions, sizes of release files or checksums on purpose: every download link points at the
+             current release. -->
         <section class="domovoi-band position-relative overflow-hidden inner-page-top">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
@@ -229,9 +230,13 @@
                             </ul>
                             <a href="https://github.com/coders-farm-official/domovoi/releases/latest/download/DomovoiSetup.exe" class="btn btn-medium btn-rounded btn-domovoi fw-600 mb-15px"><i class="feather icon-feather-download me-5px"></i> Download for Windows</a>
                             <p class="mb-0 fs-15">Always the latest release; its checksums are on <a href="https://github.com/coders-farm-official/domovoi/releases/latest" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">the release page</a>. <a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/WINDOWS_HOST.md" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">The full Windows guide</a>.</p>
-                            <p class="mb-0 mt-10px fs-15">Prefer Linux? On Ubuntu Server 26.04, one script sets it all up: <a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/LINUX_HOST.md" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">the Linux guide</a>.</p>
-                            <!-- TODO(1.3.0): when 1.3.0 is published, replace the Linux line above with the one-command install
-                                 (curl ... | sudo bash) and the supported distros: Ubuntu, Debian 13, Linux Mint and Pop!_OS. Check docs/LINUX_HOST.md on main first. -->
+                            <p class="mb-10px mt-20px fs-15"><strong>Prefer Linux?</strong> On Ubuntu 26.04, Debian 13, Linux Mint or Pop!_OS, one command sets it all up:</p>
+                            <!-- The command is copied from docs/LINUX_HOST.md ("One command"); copy it again from there if it changes. -->
+                            <div class="domovoi-command">
+                                <code id="linux-install-command">curl -fsSL https://raw.githubusercontent.com/coders-farm-official/domovoi/stable/scripts/linux/install.sh | sudo bash</code>
+                                <button type="button" class="domovoi-command-copy" data-copy-command="linux-install-command" aria-label="Copy the Linux install command">Copy</button>
+                            </div>
+                            <p class="mb-0 fs-15">It asks a few questions, checks that what it downloaded is the signed release, and ends with the address to open from your phone. <a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/LINUX_HOST.md#install" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">The Linux guide</a> shows how to read the script before you run it.</p>
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-6">
@@ -258,15 +263,15 @@
                     <div class="col-lg-6 does">
                         <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px fs-30 mb-25px">What it does</h2>
                         <ul>
-                            <li><i class="feather icon-feather-check-circle"></i><span>Plays your own music library in every room, and Up next keeps it going.</span></li>
+                            <li><i class="feather icon-feather-check-circle"></i><span>Plays your own music library in every room. When your songs run out, Up next keeps the music going with more like them, and tells you why it picked each one.</span></li>
+                            <li><i class="feather icon-feather-check-circle"></i><span>Plays the same music in several rooms at once: say &ldquo;play jazz everywhere&rdquo;, or group rooms like &ldquo;upstairs&rdquo;. &ldquo;Stop&rdquo; stops the whole group, and &ldquo;stop here&rdquo; just your room.</span></li>
                             <li><i class="feather icon-feather-check-circle"></i><span>Internet radio, podcasts, audiobooks and videos.</span></li>
                             <li><i class="feather icon-feather-check-circle"></i><span>Timers, alarms, reminders, shared lists, the news and a household calendar, by voice.</span></li>
+                            <li><i class="feather icon-feather-check-circle"></i><span>Shows your other calendars too, on the household calendar and Home's &ldquo;today and next&rdquo; card: add one by its private link, or share your phone's calendars from the app. Read-only: Domovoi never changes them.</span></li>
                             <li><i class="feather icon-feather-check-circle"></i><span>Drop in on another room, like an intercom.</span></li>
-                            <li><i class="feather icon-feather-check-circle"></i><span>Knows who's speaking, once each person in the house introduces themselves.</span></li>
+                            <li><i class="feather icon-feather-check-circle"></i><span>Knows who's speaking, with a new voice model that recognizes people about twice as often. Each person says &ldquo;my name is&nbsp;&hellip;&rdquo; once, and Domovoi asks only as many quick follow-ups as it needs to learn their voice.</span></li>
                             <li><i class="feather icon-feather-check-circle"></i><span>Keeps your files, photos and documents in one place, with printing and scanning.</span></li>
                             <li><i class="feather icon-feather-check-circle"></i><span>Plugins add more, installed from the dashboard.</span></li>
-                            <!-- TODO(1.3.0): add "Group rooms to play the same music together." and "Shows the calendars you subscribe to,
-                                 read-only." once 1.3.0 is published. Check README "What each interface can do" on main first. -->
                         </ul>
                     </div>
                     <div class="col-lg-6 doesnt">
@@ -357,13 +362,13 @@
                     <div class="col-lg-4">
                         <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px fs-30 mb-20px">Built in the open</h2>
                         <p>MIT licensed and built in public since July 2026, with thousands of commits and automated tests. Built with AI coding agents, held to tests, a written security model and real releases.</p>
-                        <p>Releases are signed, every release lists SHA-256 checksums for its files, and Windows updates check the installer against the Domovoi release key before installing. <a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/SECURITY.md#verifying-a-release" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">How to check a release</a>.</p>
-                        <!-- TODO(1.3.0): from 1.3.0 every release file also has GitHub build provenance and a CycloneDX SBOM
-                             (docs/SECURITY.md, "Verifying a release"); add a sentence for each. Add the OpenSSF Best Practices
-                             and OpenSSF Scorecard badges when they're earned (Scorecard goes public at 1.3.0). -->
-                        <!-- "Releases are signed" went in on 2026-11-15 at the owner's word that release signing lands within
-                             hours. If docs/SECURITY.md on main doesn't describe signed release commits and tags by then, take
-                             the words "Releases are signed," back out. -->
+                        <!-- Checked against SECURITY.md "Verifying a release" (repo root) at v1.3.0: SHA256SUMS, signatures
+                             (the Windows Setup with the release key, the APKs with the app's key), GitHub build provenance and
+                             CycloneDX SBOMs. -->
+                        <p>Releases are signed, and every release lists SHA-256 checksums for its files; Windows updates check the installer against the Domovoi release key before installing. Every file also has GitHub build provenance, a record of where and how it was built, and each release comes with software bills of materials (SBOMs) listing the third-party code it ships. <a href="https://github.com/coders-farm-official/domovoi/blob/main/SECURITY.md#verifying-a-release" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">How to check a release</a>.</p>
+                        <!-- Badge copied from the domovoi README. TODO(best-practices): add the OpenSSF Best Practices badge
+                             beside it, copied from the README, once the project has earned it. -->
+                        <p class="domovoi-badges"><a href="https://scorecard.dev/viewer/?uri=github.com/coders-farm-official/domovoi" target="_blank"><img alt="OpenSSF Scorecard" src="https://img.shields.io/ossf-scorecard/github.com/coders-farm-official/domovoi?label=OpenSSF%20Scorecard&style=flat-square&labelColor=1F1A14"></a></p>
                         <p>Want to build things like this? <a href="https://learn.codersfarm.org" class="text-dark-gray fw-600 text-decoration-line-bottom">Start free at learn.codersfarm.org.</a></p>
                         <a href="https://github.com/coders-farm-official/domovoi" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">See the code on GitHub</a>
                     </div>
@@ -392,10 +397,8 @@
                                 </div>
                                 <div id="domovoi-faq-01" class="accordion-collapse collapse show" data-bs-parent="#domovoi-faq">
                                     <div class="accordion-body last-paragraph-no-margin">
-                                        <p><strong>Your house:</strong> only to set up. The server downloads its AI models during setup (about 10.5 to 13.5 GB on Windows), then keeps working with no internet at all if you choose &ldquo;No, keep everything in the house&rdquo;.</p>
+                                        <p><strong>Your house:</strong> only to set up. The server downloads its AI models during setup (about 10.5 to 13.5 GB on Windows), then keeps working with no internet at all if you choose &ldquo;No, keep everything in the house&rdquo;. Setup downloads the Android app too, so phones in the house can install it from your server, even with no internet.</p>
                                         <p><strong>Your phone:</strong> once, to download the assistant's models (about 2.6 GB). After that it answers in airplane mode, and your phone's own music and videos play with no connection.</p>
-                                        <!-- TODO(1.3.0): add that the installer also puts the phone app on the server, so phones with
-                                             no internet can install it from there. Check RELEASE_NOTES "1.3.0" on main first. -->
                                     </div>
                                 </div>
                             </div>
@@ -407,7 +410,7 @@
                                 </div>
                                 <div id="domovoi-faq-02" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
                                     <div class="accordion-body last-paragraph-no-margin">
-                                        <p>Not for the phone app: its assistant and your phone's own music, videos and photos work without one. A server on a Windows 11 PC or Ubuntu Linux adds the voice in every room, the shared library and the dashboard. <a href="#at-home" class="smooth-link text-dark-gray fw-600 text-decoration-line-bottom">Set one up</a>.</p>
+                                        <p>Not for the phone app: its assistant and your phone's own music, videos and photos work without one. A server on a Windows 11 PC or a Linux computer (Ubuntu, Debian, Linux Mint or Pop!_OS) adds the voice in every room, the shared library and the dashboard. <a href="#at-home" class="smooth-link text-dark-gray fw-600 text-decoration-line-bottom">Set one up</a>.</p>
                                     </div>
                                 </div>
                             </div>
@@ -443,7 +446,7 @@
                                 </div>
                                 <div id="domovoi-faq-04b" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
                                     <div class="accordion-body last-paragraph-no-margin">
-                                        <p>Not yet, but it's coming for Apple Silicon Macs. Until then, the server runs on a Windows 11 PC or Ubuntu Linux. <a href="https://forms.gle/wbz194RhuLmJdg3D8" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">Get an email</a> when it's ready.</p>
+                                        <p>Not yet, but it's coming for Apple Silicon Macs. Until then, the server runs on a Windows 11 PC or a Linux computer. <a href="https://forms.gle/wbz194RhuLmJdg3D8" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">Get an email</a> when it's ready.</p>
                                     </div>
                                 </div>
                             </div>
