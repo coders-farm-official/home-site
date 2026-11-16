@@ -26,11 +26,13 @@ It's built on a ThemeForest template (jQuery, Bootstrap, the template's `js/main
 - **Template classes are not a full utility set.** Check that a class exists in the template CSS before using it (for example there is no `pt-180px`; use `inner-page-top` from `site.css`).
 - **Images**: WebP for photos and screenshots, with `width`, `height` and `alt` set. Share images are 1200 × 630 JPGs in `images/`.
 - **Placeholders** the owner must fill before launch use `class="owner-todo"` and an `<!-- OWNER: ... -->` comment. Search for `owner-todo` before going live.
-- **Domovoi copy**: "Hey Domovoi" is fine; never claim "signed updates"; no emoji in Domovoi sections; amber `#F2A618` is the only accent there.
+- **Domovoi copy**: lead with the home (a server you own, a voice in every room), then the phone app. Check every claim against the domovoi repo's `main` (README, `docs/`, `android/`) before writing it. Don't announce unreleased features; don't name third-party media brands; credit Coders Farm, never a person. "Hey Domovoi" is fine; releases are signed, so say so, but describe how to verify one the way `docs/SECURITY.md` does, and keep that separate from the Windows installer's missing code-signing certificate; no emoji in Domovoi sections; amber `#F2A618` is the only accent there.
 
 ## On each Domovoi release
 
-Update `domovoi/index.html`: the version and date, both APK file names and links, `DomovoiSetup.exe`'s link, and the sizes and SHA-256 values of all three from the release's `SHA256SUMS`, plus `softwareVersion` and `downloadUrl` in its JSON-LD. Update the quick facts on `about/index.html` if they name the version.
+Nothing to edit for an ordinary release. The pages hold no versions, file sizes or checksums: the Windows button uses `releases/latest/download/DomovoiSetup.exe`, the Android app links Google Play first and the GitHub releases page for APKs, and checksums live in each release's `SHA256SUMS`.
+
+When 1.3.0 is published, search the site for `TODO(1.3.0)`: each comment says what to switch on and which repo doc to check first. `privacy/index.html` also has a `TODO(now)`.
 
 ## Preview
 
