@@ -52,6 +52,14 @@
 .domovoi-download .download-card h3 { font-size: 24px; line-height: 32px; margin-bottom: 8px; }
 .domovoi-download .download-meta { font-size: 14px; color: #6b6259; margin: 15px 0 20px; }
 .domovoi-download .sha256 { display: block; font-family: Consolas, 'Courier New', monospace; font-size: 12px; line-height: 18px; word-break: break-all; color: #1F1A14; background: #f4efe7; padding: 8px 10px; border-radius: 4px; margin-top: 6px; }
+.domovoi-command { display: flex; align-items: stretch; gap: 0; margin-bottom: 12px; border-radius: 6px; background: #1F1A14; overflow: hidden; }
+.domovoi-command code { flex: 1 1 auto; min-width: 0; padding: 10px 12px; font-family: Consolas, 'Courier New', monospace; font-size: 13px; line-height: 20px; color: #F4EFE7; background: transparent; word-break: break-all; user-select: all; }
+.domovoi-command-copy { position: relative; flex: none; border: 0; padding: 0 14px; background: #F2A618; color: #1F1A14; font-size: 13px; font-weight: 600; cursor: pointer; }
+.domovoi-command-copy:hover, .domovoi-command-copy:focus-visible { background: #F9AD26; }
+.domovoi-command-copy.copied { font-size: 0; }
+.domovoi-command-copy.copied::after { content: attr(data-copy-status); font-size: 13px; }
+.domovoi-badges { margin: 0 0 20px; line-height: 0; }
+.domovoi-badges img { height: 20px; width: auto; }
 .domovoi-download .btn-domovoi { background-color: #F2A618; border-color: #F2A618; color: #1F1A14; }
 .domovoi-download .btn-domovoi:hover { background-color: #F9AD26; border-color: #F9AD26; color: #1F1A14; }
 .domovoi-download .btn-outline-domovoi { border: 2px solid #1F1A14; color: #1F1A14; background: transparent; }
