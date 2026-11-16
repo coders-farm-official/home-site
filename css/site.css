@@ -43,7 +43,9 @@
 }
 
 /* /domovoi */
-.domovoi-band .domovoi-play-soon { display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; border: 1px dashed rgba(255, 255, 255, 0.35); border-radius: 50px; color: rgba(255, 255, 255, 0.7); font-size: 15px; }
+.domovoi-band .btn-play-light { border: 2px solid rgba(255, 255, 255, 0.6); color: #fff; background: transparent; }
+.domovoi-band .btn-play-light:hover { border-color: var(--domovoi-amber); color: var(--domovoi-amber); background: transparent; }
+.domovoi-intro .domovoi-intro-icon { font-size: 30px; color: #F2A618; }
 .domovoi-download { background: #FCFAF6; }
 .domovoi-download .download-card { height: 100%; padding: 35px; border-radius: 8px; background: #fff; box-shadow: 0 10px 40px rgba(31, 26, 20, 0.08); border-top: 4px solid #F2A618; }
 .domovoi-download .download-card.secondary { border-top-color: #d8cfc2; }

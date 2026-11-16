@@ -158,6 +158,18 @@
                             <li><strong>The narrator</strong> uses the voices built into your browser. Some browsers' online voices send the text being read to the browser's maker.</li>
                         </ul>
 
+                        <!-- TODO(now): this app section is the policy effective October 15, 2026. The domovoi repo's
+                             docs/PRIVACY_POLICY.md on main is effective October 21, 2026 (iPhone app added November 14) and
+                             also covers what phone chats read with permission (approximate and precise location, contacts,
+                             the phone's calendar), photos and documents, and lookups. Sync this section with it and update the
+                             effective date; it describes the released app, so it shouldn't wait for 1.3.0. -->
+                        <!-- TODO(1.3.0): revise, don't just copy-edit: change only what the software really does, then update
+                             the effective date.
+                             - Phone calendars: if the household opts in, the app shares the phone's calendars with their own
+                               Domovoi server, read-only, with private events sent as "busy". Add it to "What goes to your
+                               Domovoi server". Sources: android/ calendar docs and DATA_SAFETY.md ("not collected", because it
+                               goes only to the household's own server).
+                             - The phone app's own downloads: check the on-device models still come only from Hugging Face. -->
                         <h2 id="domovoi-app" class="alt-font text-dark-gray fw-600">The Domovoi app for Android</h2>
                         <p>Effective October 15, 2026. Domovoi is a home assistant that runs on your own hardware. This section covers the Domovoi Android app (<code>com.domovoi.app</code>), whether it came from Google Play, from GitHub, or from your own Domovoi server. The short version:</p>
                         <ul>
@@ -214,6 +226,10 @@
                             <li><strong>Share as text</strong> hands it to any app you choose.</li>
                         </ul>
 
+                        <!-- TODO(1.3.0): check this paragraph against docs/SECURITY_PRIVACY.md. Voice ID moves to a new model in
+                             1.3.0 and households introduce themselves again (still on the server). 1.3.0 adds internet features:
+                             ListenBrainz popularity for Up next (an on/off setting) and calendar subscription links. Keep linking
+                             docs/INTERNET.md rather than copying its list. -->
                         <h2 id="domovoi-server" class="alt-font text-dark-gray fw-600">The Domovoi server</h2>
                         <p>The Domovoi server runs on your own hardware and sends nothing to Coders Farm. Speech recognition, the language models and the voices all run on that machine, so your voice never leaves your network. Whether it uses the internet at all is your choice when you set it up, and what each internet feature sends is listed in <a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/INTERNET.md" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">Will your Domovoi have internet?</a> The full security and privacy model is in <a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/SECURITY_PRIVACY.md" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">docs/SECURITY_PRIVACY.md</a>.</p>
 

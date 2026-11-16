@@ -1,18 +1,18 @@
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
-        <title>Domovoi: a voice assistant that runs on your phone - Coders Farm</title>
+        <title>Domovoi: a private home assistant on your own hardware - Coders Farm</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="author" content="Coders Farm">
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta name="description" content="Domovoi is a free, open-source voice assistant from Coders Farm. On your phone it answers in airplane mode; at home it runs on your own hardware. Download the Android app.">
+        <meta name="description" content="Domovoi is a free, open-source home assistant from Coders Farm: a voice in every room, your music everywhere, and an Android app that works even offline. It runs on a computer you own.">
         <link rel="canonical" href="https://codersfarm.org/domovoi/">
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="Coders Farm">
         <meta property="og:url" content="https://codersfarm.org/domovoi/">
-        <meta property="og:title" content="Domovoi: a voice assistant that runs on your phone">
-        <meta property="og:description" content="Free and open source. After a one-time download it answers in airplane mode, and what you ask never leaves your phone.">
+        <meta property="og:title" content="Domovoi: a home assistant that lives in your house, not in the cloud">
+        <meta property="og:description" content="A voice in every room, your music everywhere, and an app that works even offline. Free and open source, from Coders Farm.">
         <meta property="og:image" content="https://codersfarm.org/images/og-domovoi.jpg">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
@@ -38,14 +38,14 @@
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "MobileApplication",
+            "@type": "SoftwareApplication",
             "name": "Domovoi",
             "url": "https://codersfarm.org/domovoi/",
-            "description": "A free, open-source voice assistant. On the phone it answers with a language model running on the device, in airplane mode after a one-time download.",
-            "operatingSystem": "Android 8.0 or later",
+            "description": "A free, open-source home assistant that runs on a computer you own: a voice in every room, your music everywhere, and an Android app that works even offline.",
+            "operatingSystem": "Windows 11, Linux, Android 8.0 or later",
             "applicationCategory": "UtilitiesApplication",
-            "softwareVersion": "1.0.0-rc1",
-            "downloadUrl": "https://github.com/coders-farm-official/domovoi/releases/tag/v1.0.0-rc1",
+            "downloadUrl": "https://github.com/coders-farm-official/domovoi/releases/latest",
+            "installUrl": "https://play.google.com/store/apps/details?id=com.domovoi.app",
             "license": "https://opensource.org/licenses/MIT",
             "image": "https://codersfarm.org/images/press/domovoi-icon.png",
             "screenshot": "https://codersfarm.org/images/domovoi-assistant.webp",
@@ -126,6 +126,9 @@
         </header>
         <!-- end header -->
         <!-- start section: hero -->
+        <!-- Copy here and below is checked against the domovoi repo's main branch (README, docs/WINDOWS_HOST.md, docs/LINUX_HOST.md,
+             docs/SPARE_DEVICE_SATELLITES.md, docs/RELEASE_NOTES.md, android/README.md, docs/SECURITY.md). No versions, sizes or
+             checksums on purpose: every download link points at the current release. Search this file for TODO(1.3.0) when 1.3.0 ships. -->
         <section class="domovoi-band position-relative overflow-hidden inner-page-top">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
@@ -133,33 +136,31 @@
                         <div class="icon-with-text-style-08 mb-20px">
                             <div class="feature-box feature-box-left-icon-middle">
                                 <div class="feature-box-icon feature-box-icon-rounded w-55px h-55px rounded-circle bg-amber me-15px">
-                                    <i class="feather icon-feather-smartphone d-inline-block icon-extra-medium text-dark-gray"></i>
+                                    <i class="bi bi-house-heart d-inline-block icon-extra-medium text-dark-gray"></i>
                                 </div>
                                 <div class="feature-box-content last-paragraph-no-margin">
                                     <span class="d-inline-block alt-font fs-19 fw-500 ls-minus-05px domovoi-eyebrow">Free, from Coders Farm</span>
                                 </div>
                             </div>
                         </div>
-                        <h1 class="alt-font fw-600 ls-minus-2px text-white fs-60 lh-65 sm-fs-45 sm-lh-50 mb-25px">A voice assistant that runs on your phone. Airplane mode on.</h1>
-                        <p class="fs-19 lh-32 mb-30px">Ask by voice or text, and a language model on the phone answers. After a one-time download, what you ask never leaves your device.</p>
+                        <h1 class="alt-font fw-600 ls-minus-2px text-white fs-60 lh-65 sm-fs-45 sm-lh-50 mb-25px">A home assistant that lives in your house, not in the cloud.</h1>
+                        <p class="fs-19 lh-32 mb-30px">A voice in every room, your music everywhere, and an app that works even offline. It runs on a computer you own, and your voice never leaves your network.</p>
                         <div>
-                            <a href="#download" class="btn btn-large btn-rounded btn-switch-text btn-domovoi fw-600 me-20px sm-me-10px mb-15px smooth-link">
+                            <a href="#at-home" class="btn btn-large btn-rounded btn-switch-text btn-domovoi fw-600 me-20px sm-me-10px mb-15px smooth-link">
                                 <span>
-                                    <span class="btn-double-text" data-text="Free, no account">Download for Android</span>
-                                    <span><i class="feather icon-feather-download"></i></span>
+                                    <span class="btn-double-text" data-text="Free and open source">Set up Domovoi at home</span>
+                                    <span><i class="feather icon-feather-arrow-down-circle"></i></span>
                                 </span>
                             </a>
-                            <!-- becomes the Google Play badge once the listing is live -->
-                            <span class="domovoi-play-soon mb-15px"><i class="fa-brands fa-google-play"></i> Coming to Google Play</span>
+                            <a href="https://play.google.com/store/apps/details?id=com.domovoi.app" target="_blank" class="btn btn-large btn-rounded btn-play-light fw-600 mb-15px"><i class="fa-brands fa-google-play me-10px"></i>Get the Android app</a>
                         </div>
-                        <p class="mt-10px mb-0">Want it in every room? <a href="#whole-house" class="smooth-link fw-600 text-decoration-line-bottom">Set up Domovoi for the whole house</a>.</p>
                     </div>
                     <div class="col-xl-5 offset-xl-1 col-lg-6 text-center">
                         <div class="domovoi-visual atropos" data-atropos>
                             <div class="atropos-scale">
                                 <div class="atropos-rotate">
                                     <div class="atropos-inner text-center w-100 overflow-visible">
-                                        <img data-atropos-offset="-2" class="domovoi-phone position-relative" src="/images/domovoi-assistant.webp" width="270" height="540" alt="The Domovoi assistant on a phone, labelled &quot;on this phone&quot;, answering why cats purr">
+                                        <img data-atropos-offset="-2" class="domovoi-phone position-relative" src="/images/domovoi-assistant.webp" width="270" height="540" alt="The Domovoi app on a phone, answering why cats purr">
                                         <img data-atropos-offset="8" class="domovoi-cat animation-float z-index-9" src="/images/domovoi-icon.webp" width="150" height="150" alt="Domovoi's amber cat">
                                     </div>
                                 </div>
@@ -170,64 +171,157 @@
             </div>
         </section>
         <!-- end section: hero -->
-        <!-- start section: download -->
-        <!-- On each new release: update the version, date, file names, sizes and SHA-256 values below from the release's SHA256SUMS. -->
-        <section id="download" class="domovoi-download">
+        <!-- start section: what it is -->
+        <section class="domovoi-intro">
             <div class="container">
                 <div class="row justify-content-center mb-50px sm-mb-30px">
                     <div class="col-lg-8 text-center">
-                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px mb-15px">Download Domovoi for Android</h2>
-                        <p class="fs-18 mb-0">Version 1.0.0-rc1, released October 15, 2026. Free and open source under the MIT license.</p>
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px mb-15px">What Domovoi is</h2>
+                        <p class="fs-18 mb-0">Domovoi turns a computer you already own into your home's own system: your music, movies, audiobooks, files and documents in one place, playing in every room and on your phone.</p>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="h-100 p-40px border-radius-6px box-shadow-large bg-white">
+                            <i class="feather icon-feather-monitor domovoi-intro-icon"></i>
+                            <h3 class="alt-font text-dark-gray fw-600 fs-24 mt-15px mb-10px">A server at home</h3>
+                            <p class="mb-0">A Windows or Linux computer you own runs it all: understanding speech, the AI, your library and the dashboard.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="h-100 p-40px border-radius-6px box-shadow-large bg-white">
+                            <i class="feather icon-feather-speaker domovoi-intro-icon"></i>
+                            <h3 class="alt-font text-dark-gray fw-600 fs-24 mt-15px mb-10px">A voice in every room</h3>
+                            <p class="mb-0">A small speaker, a spare laptop or an old phone in each room hears the wake word, answers and plays your music.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="h-100 p-40px border-radius-6px box-shadow-large bg-white">
+                            <i class="feather icon-feather-smartphone domovoi-intro-icon"></i>
+                            <h3 class="alt-font text-dark-gray fw-600 fs-24 mt-15px mb-10px">An app in your pocket</h3>
+                            <p class="mb-0">The Android app reaches your house from your phone, and on its own it plays your phone's music and answers questions, even offline.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section: what it is -->
+        <!-- start section: at home -->
+        <section id="at-home" class="domovoi-download">
+            <div class="container">
+                <div class="row justify-content-center mb-50px sm-mb-30px">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px mb-15px">Set up Domovoi at home</h2>
+                        <p class="fs-18 mb-0">Put the Domovoi server on a computer at home, then give any room a voice. Everything runs from that one computer, and your voice never leaves your network.</p>
                     </div>
                 </div>
                 <div class="row g-4 justify-content-center">
                     <div class="col-lg-5 col-md-6">
                         <div class="download-card">
-                            <h3 class="alt-font text-dark-gray fw-600">Most phones</h3>
-                            <p class="mb-0">For 64-bit phones, almost every phone from about 2017 on. Includes the on-device assistant. Pick this one if you're not sure.</p>
-                            <div class="download-meta">
-                                domovoi-1.0.0-rc1-arm64-v8a.apk &middot; 80.0 MB
-                                <span class="sha256" title="SHA-256">SHA-256: 268ff4212d5c403e1060870f30b61811a8fbe2b0878882de490ac8d17e20f474</span>
-                            </div>
-                            <a href="https://github.com/coders-farm-official/domovoi/releases/download/v1.0.0-rc1/domovoi-1.0.0-rc1-arm64-v8a.apk" class="btn btn-medium btn-rounded btn-domovoi fw-600"><i class="feather icon-feather-download me-5px"></i> Download the APK</a>
+                            <span class="alt-font fs-14 fw-600 text-uppercase ls-1px d-block mb-10px">Step 1</span>
+                            <h3 class="alt-font text-dark-gray fw-600">The server</h3>
+                            <p>The Windows installer sets up the whole Domovoi server on a Windows 11 PC: speech, the language models, voices, your music library and the dashboard.</p>
+                            <ul class="requirements">
+                                <li>Windows 11 22H2 or later, 64-bit (not Arm), with virtualization turned on in the firmware.</li>
+                                <li>16 GB of memory and 40 GB free, ideally on an SSD. An NVIDIA GPU helps but isn't needed.</li>
+                                <li>About 10.5 to 13.5 GB to download during setup, most of it the AI models; about 4.5 GB if you leave out AI chat and questions.</li>
+                                <li>The installer doesn't carry a Windows code-signing certificate yet. Turn Smart App Control off, and when Windows says &ldquo;Windows protected your PC&rdquo;, choose More info, then Run anyway.</li>
+                            </ul>
+                            <a href="https://github.com/coders-farm-official/domovoi/releases/latest/download/DomovoiSetup.exe" class="btn btn-medium btn-rounded btn-domovoi fw-600 mb-15px"><i class="feather icon-feather-download me-5px"></i> Download for Windows</a>
+                            <p class="mb-0 fs-15">Always the latest release; its checksums are on <a href="https://github.com/coders-farm-official/domovoi/releases/latest" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">the release page</a>. <a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/WINDOWS_HOST.md" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">The full Windows guide</a>.</p>
+                            <p class="mb-0 mt-10px fs-15">Prefer Linux? On Ubuntu Server 26.04, one script sets it all up: <a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/LINUX_HOST.md" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">the Linux guide</a>.</p>
+                            <!-- TODO(1.3.0): when 1.3.0 is published, replace the Linux line above with the one-command install
+                                 (curl ... | sudo bash) and the supported distros: Ubuntu, Debian 13, Linux Mint and Pop!_OS. Check docs/LINUX_HOST.md on main first. -->
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-6">
                         <div class="download-card secondary">
-                            <h3 class="alt-font text-dark-gray fw-600">Older and budget phones</h3>
-                            <p class="mb-0">For 32-bit phones, including Android Go. Everything except the on-device assistant, which needs a 64-bit phone.</p>
-                            <div class="download-meta">
-                                domovoi-1.0.0-rc1-armeabi-v7a.apk &middot; 48.5 MB
-                                <span class="sha256" title="SHA-256">SHA-256: 206e595f6c515e33e3841231bc005f3845f2c80a160ad26b3fe90f4a5490b6c8</span>
-                            </div>
-                            <a href="https://github.com/coders-farm-official/domovoi/releases/download/v1.0.0-rc1/domovoi-1.0.0-rc1-armeabi-v7a.apk" class="btn btn-medium btn-rounded btn-outline-domovoi fw-600"><i class="feather icon-feather-download me-5px"></i> Download the APK</a>
+                            <span class="alt-font fs-14 fw-600 text-uppercase ls-1px d-block mb-10px">Step 2</span>
+                            <h3 class="alt-font text-dark-gray fw-600">The rooms</h3>
+                            <p>Any room can have Domovoi: a Raspberry Pi speaker, a spare Linux or Windows laptop, or an old Android phone or tablet in room mode.</p>
+                            <p>Add one from your server's dashboard under Settings &rarr; Household &rarr; Rooms. It joins with a one-time approval code, and then it hears the wake word, answers, plays music, rings timers and works as an intercom.</p>
+                            <ul class="requirements">
+                                <li>Keep laptops and phones on a charger, on a hard surface, with a charge limit if they have one.</li>
+                                <li>A phone or tablet becomes a room through the Android app, with nothing else to install.</li>
+                            </ul>
+                            <a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/SPARE_DEVICE_SATELLITES.md" target="_blank" class="btn btn-medium btn-rounded btn-outline-domovoi fw-600"><i class="feather icon-feather-book-open me-5px"></i> Set up a room</a>
                         </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center mt-50px sm-mt-30px">
-                    <div class="col-lg-10">
-                        <h3 class="alt-font text-dark-gray fw-600 fs-24 mb-15px">What you need</h3>
-                        <ul class="requirements">
-                            <li>Android 8.0 or later.</li>
-                            <li>For the on-device assistant: a 64-bit phone sold with 8 GB of memory or more, and about 3 GB of free space.</li>
-                            <li>A one-time download of the assistant's language model, about 2.4 GB. Wi-Fi recommended; the app asks before it starts.</li>
-                        </ul>
-                        <p class="mb-0">Android asks before installing an app from outside Google Play; that's expected. Every file, the checksums and the release notes are on <a href="https://github.com/coders-farm-official/domovoi/releases/tag/v1.0.0-rc1" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">the GitHub release page</a>.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end section: download -->
-        <!-- start section: screenshots -->
-        <section class="domovoi-screens">
+        <!-- end section: at home -->
+        <!-- start section: does / doesn't -->
+        <section class="domovoi-lists bg-very-light-gray">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 does">
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px fs-30 mb-25px">What it does</h2>
+                        <ul>
+                            <li><i class="feather icon-feather-check-circle"></i><span>Plays your own music library in every room, and Up next keeps it going.</span></li>
+                            <li><i class="feather icon-feather-check-circle"></i><span>Internet radio, podcasts, audiobooks and videos.</span></li>
+                            <li><i class="feather icon-feather-check-circle"></i><span>Timers, alarms, reminders, shared lists, the news and a household calendar, by voice.</span></li>
+                            <li><i class="feather icon-feather-check-circle"></i><span>Drop in on another room, like an intercom.</span></li>
+                            <li><i class="feather icon-feather-check-circle"></i><span>Knows who's speaking, once each person in the house introduces themselves.</span></li>
+                            <li><i class="feather icon-feather-check-circle"></i><span>Keeps your files, photos and documents in one place, with printing and scanning.</span></li>
+                            <li><i class="feather icon-feather-check-circle"></i><span>Plugins add more, installed from the dashboard.</span></li>
+                            <!-- TODO(1.3.0): add "Group rooms to play the same music together." and "Shows the calendars you subscribe to,
+                                 read-only." once 1.3.0 is published. Check README "What each interface can do" on main first. -->
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 doesnt">
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px fs-30 mb-25px">What it doesn't</h2>
+                        <ul>
+                            <li><i class="feather icon-feather-x-circle"></i><span>No cloud account, and nothing to sign up for.</span></li>
+                            <li><i class="feather icon-feather-x-circle"></i><span>No ads, and nothing is sent to Coders Farm.</span></li>
+                            <li><i class="feather icon-feather-x-circle"></i><span>Your voice doesn't leave your network: speech is understood on your own computer.</span></li>
+                            <li><i class="feather icon-feather-x-circle"></i><span>It doesn't decide when to use the internet; your household does. At setup you choose: yes, always; sometimes; or no, keep everything in the house. You can change it later in Settings &rarr; Privacy &rarr; Internet.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section: does / doesn't -->
+        <!-- start section: android -->
+        <section id="android" class="domovoi-download domovoi-screens">
             <div class="container">
                 <div class="row justify-content-center mb-50px sm-mb-30px">
                     <div class="col-lg-8 text-center">
-                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px mb-15px">See it work</h2>
-                        <p class="fs-18 mb-0">On its own, the app is an assistant and a player for what's on your phone. Connected to a Domovoi server at home, it runs the whole house.</p>
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px mb-15px">The Android app</h2>
+                        <p class="fs-18 mb-25px">With your Domovoi server, the app runs the whole house from your phone. On its own, it plays what's on your phone and runs an assistant right on the phone, even in airplane mode.</p>
+                        <a href="https://play.google.com/store/apps/details?id=com.domovoi.app" target="_blank" class="btn btn-large btn-rounded btn-domovoi fw-600 mb-15px"><i class="fa-brands fa-google-play me-10px"></i>Get it on Google Play</a>
+                        <p class="mb-0 fs-15">Or download the APK from <a href="https://github.com/coders-farm-official/domovoi/releases" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">the GitHub releases page</a>: the 64-bit APK fits almost every phone from about 2017 on, and the 32-bit one is for older and budget phones (everything except the on-device assistant).</p>
                     </div>
                 </div>
-                <!-- the airplane-mode demo video goes here once it's recorded: a <video> with a poster image, captions, preload="none", served from this site -->
+                <div class="row justify-content-center g-5 mb-50px sm-mb-30px">
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="alt-font text-dark-gray fw-600 fs-24 mb-15px">What you need</h3>
+                        <ul class="requirements">
+                            <li>Android 8.0 or later.</li>
+                            <li>For the on-device assistant: a 64-bit phone with 8 GB of memory or more, and about 3 GB of free space.</li>
+                            <li>A one-time download of the assistant's models, about 2.6 GB, over Wi-Fi unless you change it.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="alt-font text-dark-gray fw-600 fs-24 mb-15px">The phone's assistant can</h3>
+                        <ul class="requirements">
+                            <li>Answer typed or spoken questions with no internet, and read the answer aloud.</li>
+                            <li>Set timers and alarms in your Clock app, after asking you first.</li>
+                            <li>Play, pause and skip on the phone's own player.</li>
+                            <li>Read a document you attach, or a photo on phones fast enough to read one.</li>
+                            <li>With your permission: say where you are, start a call or text to a contact for you to send, and read your phone's calendar.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="alt-font text-dark-gray fw-600 fs-24 mb-15px">And can't</h3>
+                        <ul class="requirements">
+                            <li>Listen for a wake word. You tap the mic; room mode is a separate feature.</li>
+                            <li>Read your texts, call log or notifications.</li>
+                            <li>Send a message by itself.</li>
+                            <li>Reach the house's rooms, timers or calendar. That's what your home server's chat is for.</li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="row row-cols-2 row-cols-lg-4 g-4 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
                     <figure class="col">
                         <img src="/images/domovoi-assistant.webp" width="540" height="1080" loading="lazy" alt="The on-device assistant answering two questions, with the label &quot;on this phone&quot;">
@@ -248,98 +342,34 @@
                 </div>
             </div>
         </section>
-        <!-- end section: screenshots -->
-        <!-- start section: does / doesn't -->
-        <section class="domovoi-lists bg-very-light-gray">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-6 does">
-                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px fs-30 mb-25px">What it does</h2>
-                        <ul>
-                            <li><i class="feather icon-feather-check-circle"></i><span>Answers typed or spoken questions with a language model running on the phone, and reads the answer aloud.</span></li>
-                            <li><i class="feather icon-feather-check-circle"></i><span>Works with no server, and in airplane mode once the model is on the phone.</span></li>
-                            <li><i class="feather icon-feather-check-circle"></i><span>Plays the music and videos on your phone, and shows its photos and the folders you choose.</span></li>
-                            <li><i class="feather icon-feather-check-circle"></i><span>With your Domovoi server: music in every room, radio, podcasts, timers, drop-in like an intercom, and room mode for a spare phone.</span></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 doesnt">
-                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px fs-30 mb-25px">What it doesn't</h2>
-                        <ul>
-                            <li><i class="feather icon-feather-x-circle"></i><span>The assistant can't see your photos, files, contacts or location. It sees the conversation and nothing else.</span></li>
-                            <li><i class="feather icon-feather-x-circle"></i><span>The phone's assistant doesn't listen for a wake word. The mic opens when you tap it and closes when you stop talking.</span></li>
-                            <li><i class="feather icon-feather-x-circle"></i><span>It doesn't set timers or control music yet. In this first version it's a conversation.</span></li>
-                            <li><i class="feather icon-feather-x-circle"></i><span>No account, no cloud fallback, no analytics, no ads and no crash reporting.</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end section: does / doesn't -->
-        <!-- start section: whole house -->
-        <!-- On each new release: update DomovoiSetup.exe's size and SHA-256 below from the release's SHA256SUMS. -->
-        <section id="whole-house" class="domovoi-download">
-            <div class="container">
-                <div class="row justify-content-center mb-50px sm-mb-30px">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px mb-15px">For the whole house</h2>
-                        <p class="fs-18 mb-0">Put a Domovoi server on a computer at home, and the app, the dashboard and a voice in every room all run from it. Your voice never leaves your network.</p>
-                    </div>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-lg-5 col-md-6">
-                        <div class="download-card">
-                            <h3 class="alt-font text-dark-gray fw-600">Your PC as the house's server</h3>
-                            <p class="mb-0">The Windows installer sets up the whole Domovoi server on a Windows 11 PC: speech, the language models, voices, your music library and the dashboard.</p>
-                            <div class="download-meta">
-                                DomovoiSetup.exe &middot; 3.5 MB
-                                <span class="sha256" title="SHA-256">SHA-256: 5f107a99ea284b9928fa2f40adab261c39f2eb30ab1e0c680bf5dd19a88ac0e4</span>
-                            </div>
-                            <ul class="requirements">
-                                <li>Windows 11 22H2 or later (64-bit), with virtualization turned on in the firmware.</li>
-                                <li>16 GB of memory and 40 GB free, ideally on an SSD. An NVIDIA GPU helps but isn't needed.</li>
-                                <li>About 10.5 to 13.5 GB to download during setup, most of it the AI models.</li>
-                                <li>The installer isn't code-signed yet. Turn Smart App Control off, and when Windows says &ldquo;Windows protected your PC&rdquo;, choose More info, then Run anyway.</li>
-                            </ul>
-                            <a href="https://github.com/coders-farm-official/domovoi/releases/download/v1.0.0-rc1/DomovoiSetup.exe" class="btn btn-medium btn-rounded btn-domovoi fw-600 mb-15px"><i class="feather icon-feather-download me-5px"></i> Download for Windows</a>
-                            <p class="mb-0 fs-15"><a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/WINDOWS_HOST.md" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">The full Windows guide</a>. On Linux, one script installs it all on Ubuntu 26.04: <a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/LINUX_HOST.md" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">the Linux guide</a>.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-6">
-                        <div class="download-card secondary">
-                            <h3 class="alt-font text-dark-gray fw-600">A voice in every room</h3>
-                            <p>Any room can have Domovoi: a Raspberry Pi speaker, a spare Linux or Windows laptop, or an old phone or tablet running this app in room mode.</p>
-                            <p>Add one from your server's dashboard under Settings, Satellites. It joins with a one-time approval code, and then it hears the wake word, answers, plays music, rings timers and works as an intercom.</p>
-                            <ul class="requirements">
-                                <li>Keep laptops and phones on a charger, on a hard surface, with a charge limit if they have one.</li>
-                                <li>A phone or tablet becomes a room through this app, with nothing else to install.</li>
-                            </ul>
-                            <a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/SPARE_DEVICE_SATELLITES.md" target="_blank" class="btn btn-medium btn-rounded btn-outline-domovoi fw-600"><i class="feather icon-feather-book-open me-5px"></i> Set up a room</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end section: whole house -->
+        <!-- end section: android -->
         <!-- start section: privacy, open, updates -->
         <section>
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-4">
                         <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px fs-30 mb-20px">Private by design</h2>
-                        <p>Coders Farm collects nothing from the app.</p>
-                        <p>The assistant hears and answers on the phone, and audio is never saved.</p>
-                        <p>Everything else talks only to your own Domovoi server, on your home network.</p>
-                        <a href="/privacy/#domovoi-app" class="text-dark-gray fw-600 text-decoration-line-bottom">Read the app's privacy policy</a>
+                        <p>Your voice and your household's data stay on your own hardware.</p>
+                        <p>Coders Farm collects nothing from the app or the server.</p>
+                        <p>Whether Domovoi uses the internet at all is your household's choice.</p>
+                        <a href="/privacy/#domovoi-app" class="text-dark-gray fw-600 text-decoration-line-bottom">Read the privacy policy</a>
                     </div>
                     <div class="col-lg-4">
                         <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px fs-30 mb-20px">Built in the open</h2>
-                        <p>MIT licensed, with 1,100+ commits and more than 9,000 automated tests since July 2026. Built with AI coding agents, held to tests, a written security model and real releases.</p>
+                        <p>MIT licensed and built in public since July 2026, with thousands of commits and automated tests. Built with AI coding agents, held to tests, a written security model and real releases.</p>
+                        <p>Releases are signed, every release lists SHA-256 checksums for its files, and Windows updates check the installer against the Domovoi release key before installing. <a href="https://github.com/coders-farm-official/domovoi/blob/main/docs/SECURITY.md#verifying-a-release" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">How to check a release</a>.</p>
+                        <!-- TODO(1.3.0): from 1.3.0 every release file also has GitHub build provenance and a CycloneDX SBOM
+                             (docs/SECURITY.md, "Verifying a release"); add a sentence for each. Add the OpenSSF Best Practices
+                             and OpenSSF Scorecard badges when they're earned (Scorecard goes public at 1.3.0). -->
+                        <!-- "Releases are signed" went in on 2026-11-15 at the owner's word that release signing lands within
+                             hours. If docs/SECURITY.md on main doesn't describe signed release commits and tags by then, take
+                             the words "Releases are signed," back out. -->
                         <p>Want to build things like this? <a href="https://learn.codersfarm.org" class="text-dark-gray fw-600 text-decoration-line-bottom">Start free at learn.codersfarm.org.</a></p>
                         <a href="https://github.com/coders-farm-official/domovoi" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">See the code on GitHub</a>
                     </div>
                     <div class="col-lg-4">
                         <h2 class="alt-font text-dark-gray fw-600 ls-minus-1px fs-30 mb-20px">Stay in the loop</h2>
-                        <p>Get an email when Domovoi reaches Google Play and when a new release is out. Nothing else, and you can leave any time.</p>
+                        <p>Get an email when a new release is out. Nothing else, and you can leave any time.</p>
                         <p><a href="https://forms.gle/wbz194RhuLmJdg3D8" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">Get updates by email</a></p>
                         <a href="https://discord.gg/j3H5XamSxg" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">Talk with us on Discord</a>
                     </div>
@@ -362,41 +392,68 @@
                                 </div>
                                 <div id="domovoi-faq-01" class="accordion-collapse collapse show" data-bs-parent="#domovoi-faq">
                                     <div class="accordion-body last-paragraph-no-margin">
-                                        <p>Once, to download the assistant's model (about 2.4 GB). After that the assistant answers in airplane mode. Your own music and videos play with no connection at all.</p>
+                                        <p><strong>Your house:</strong> only to set up. The server downloads its AI models during setup (about 10.5 to 13.5 GB on Windows), then keeps working with no internet at all if you choose &ldquo;No, keep everything in the house&rdquo;.</p>
+                                        <p><strong>Your phone:</strong> once, to download the assistant's models (about 2.6 GB). After that it answers in airplane mode, and your phone's own music and videos play with no connection.</p>
+                                        <!-- TODO(1.3.0): add that the installer also puts the phone app on the server, so phones with
+                                             no internet can install it from there. Check RELEASE_NOTES "1.3.0" on main first. -->
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <div class="accordion-header">
                                     <a href="#" data-bs-toggle="collapse" data-bs-target="#domovoi-faq-02" aria-expanded="false" data-bs-parent="#domovoi-faq">
-                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Which phones does it run on?</div>
+                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Do I need a Domovoi server?</div>
                                     </a>
                                 </div>
                                 <div id="domovoi-faq-02" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
                                     <div class="accordion-body last-paragraph-no-margin">
-                                        <p>Android 8.0 or later. The on-device assistant needs a 64-bit phone sold with 8 GB of memory or more; older and 32-bit phones get everything else.</p>
+                                        <p>Not for the phone app: its assistant and your phone's own music, videos and photos work without one. A server on a Windows 11 PC or Ubuntu Linux adds the voice in every room, the shared library and the dashboard. <a href="#at-home" class="smooth-link text-dark-gray fw-600 text-decoration-line-bottom">Set one up</a>.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <div class="accordion-header">
                                     <a href="#" data-bs-toggle="collapse" data-bs-target="#domovoi-faq-03" aria-expanded="false" data-bs-parent="#domovoi-faq">
-                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Do I need a Domovoi server?</div>
+                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Which phones does it run on?</div>
                                     </a>
                                 </div>
                                 <div id="domovoi-faq-03" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
                                     <div class="accordion-body last-paragraph-no-margin">
-                                        <p>No. The assistant and your phone's own music, videos and photos work without one. A server adds music in every room, timers, the intercom and more. <a href="#whole-house" class="smooth-link text-dark-gray fw-600 text-decoration-line-bottom">Set one up on a Windows PC or Linux</a>.</p>
+                                        <p>Android 8.0 or later. The on-device assistant needs a 64-bit phone with 8 GB of memory or more; older and 32-bit phones get everything else.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <div class="accordion-header">
                                     <a href="#" data-bs-toggle="collapse" data-bs-target="#domovoi-faq-04" aria-expanded="false" data-bs-parent="#domovoi-faq">
-                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Is it really free? Who pays for it?</div>
+                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Is there an iPhone app?</div>
                                     </a>
                                 </div>
                                 <div id="domovoi-faq-04" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
+                                    <div class="accordion-body last-paragraph-no-margin">
+                                        <p>Not yet, but one is coming. <a href="https://forms.gle/wbz194RhuLmJdg3D8" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">Get an email</a> when it's out.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#domovoi-faq-04b" aria-expanded="false" data-bs-parent="#domovoi-faq">
+                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Can I run it on a Mac?</div>
+                                    </a>
+                                </div>
+                                <div id="domovoi-faq-04b" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
+                                    <div class="accordion-body last-paragraph-no-margin">
+                                        <p>Not yet, but it's coming for Apple Silicon Macs. Until then, the server runs on a Windows 11 PC or Ubuntu Linux. <a href="https://forms.gle/wbz194RhuLmJdg3D8" target="_blank" class="text-dark-gray fw-600 text-decoration-line-bottom">Get an email</a> when it's ready.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#domovoi-faq-05" aria-expanded="false" data-bs-parent="#domovoi-faq">
+                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Is it really free? Who pays for it?</div>
+                                    </a>
+                                </div>
+                                <div id="domovoi-faq-05" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
                                     <div class="accordion-body last-paragraph-no-margin">
                                         <p>Yes: no ads, no subscription, and no data sold. Coders Farm is a nonprofit, and donations pay for it. <a href="https://donate.codersfarm.org" class="text-dark-gray fw-600 text-decoration-line-bottom">Support the work</a>.</p>
                                     </div>
@@ -404,23 +461,24 @@
                             </div>
                             <div class="accordion-item">
                                 <div class="accordion-header">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#domovoi-faq-05" aria-expanded="false" data-bs-parent="#domovoi-faq">
-                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Why does Android warn me about installing the APK?</div>
+                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#domovoi-faq-06" aria-expanded="false" data-bs-parent="#domovoi-faq">
+                                        <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Why does Windows or Android warn me when I install it?</div>
                                     </a>
                                 </div>
-                                <div id="domovoi-faq-05" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
+                                <div id="domovoi-faq-06" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
                                     <div class="accordion-body last-paragraph-no-margin">
-                                        <p>Android asks before installing any app from outside Google Play. Allow it for your browser or file manager, install Domovoi, and turn the setting off again if you like. To be sure the file is ours, compare its SHA-256 with the one above.</p>
+                                        <p><strong>Windows:</strong> the installer doesn't carry a Windows code-signing certificate yet, so Windows shows &ldquo;Windows protected your PC&rdquo;. Choose More info, check the file is the DomovoiSetup.exe you downloaded, then Run anyway. Smart App Control has to be off.</p>
+                                        <p><strong>Android:</strong> Google Play installs it with no warning. An APK from GitHub makes Android ask before installing an app from outside Google Play; that's expected. To be sure a file is ours, compare it with the release's SHA-256 checksums.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
                                 <div class="accordion-header">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#domovoi-faq-06" aria-expanded="false" data-bs-parent="#domovoi-faq">
+                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#domovoi-faq-07" aria-expanded="false" data-bs-parent="#domovoi-faq">
                                         <div class="accordion-title fs-18 position-relative pe-0 text-dark-gray fw-600 mb-0">Who made it?</div>
                                     </a>
                                 </div>
-                                <div id="domovoi-faq-06" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
+                                <div id="domovoi-faq-07" class="accordion-collapse collapse" data-bs-parent="#domovoi-faq">
                                     <div class="accordion-body last-paragraph-no-margin">
                                         <p>Coders Farm, a 501(c)(3) nonprofit in Lansing, Michigan that teaches people to code for free. In Slavic folklore a domovoi is the household's guardian spirit, often a cat; ours lives in your network. <a href="/about/" class="text-dark-gray fw-600 text-decoration-line-bottom">About Coders Farm</a>.</p>
                                     </div>
